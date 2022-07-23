@@ -1,0 +1,16 @@
+p {
+  color: aqua;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: minmax(100px, auto) 1fr minmax(975px, auto);
+  -ms-grid-columns: 1fr;
+      grid-template: minmax(100px, auto) 1fr minmax(975px, auto)/1fr;
+}
+
+.header {
+  background: #000;
+}

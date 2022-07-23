@@ -1,0 +1,202 @@
+@import "_header";
+@import "_footer";
+
+.wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template: minmax(100px, auto) 1fr minmax(975px, auto) / 1fr;
+}
+.header {
+background: #000;
+		&__top {
+		}
+
+		&__logo {
+		}
+
+		&__center {
+		}
+
+		&__browse {
+		}
+
+		&__form {
+		}
+
+		&__search-btn {
+		}
+
+		&__right {
+		}
+
+		&__cart {
+		}
+
+		&__account {
+		}
+
+		&__menu {
+		}
+
+		&__list {
+		}
+
+		&__link {
+		}
+}
+.logo {
+}
+.main {
+
+		&__banner {
+		}
+
+		&__category {
+		}
+
+		&__item {
+		}
+
+		&__feature {
+		}
+}
+.banner {
+
+		&__header {
+
+			&_text {
+			}
+		}
+
+		&__image {
+		}
+}
+.category {
+
+		&__item {
+
+			&_big {
+			}
+		}
+
+		&__image {
+		}
+
+		&__bage {
+		}
+}
+.item {
+
+		&__title {
+		}
+
+		&__gallery {
+		}
+
+		&__btn {
+		}
+}
+.gallery {
+
+		&__items {
+		}
+
+		&__card {
+		}
+}
+.card {
+
+		&__link {
+		}
+
+		&__btn {
+		}
+
+		&__description {
+		}
+
+		&__price {
+		}
+}
+.fa {
+}
+.fa-solid {
+}
+.fa-basket-shopping {
+}
+.feature {
+
+		&__offer {
+		}
+
+		&__articles {
+		}
+
+		&__article {
+		}
+
+		&__text {
+		}
+}
+.footer {
+
+
+		&_subscribe-text {
+		}
+
+		&__top {
+		}
+
+		&__background {
+		}
+
+		&__comment {
+		}
+
+		&__subs {
+		}
+
+		&__form {
+		}
+
+		&__mid {
+		}
+
+		&__logo {
+		}
+
+		&__description {
+		}
+
+		&__nav {
+		}
+
+		&__menu {
+		}
+
+		&__title {
+		}
+
+		&__list {
+		}
+
+		&__link {
+		}
+
+		&__bottom {
+		}
+
+		&__rights {
+		}
+
+		&__social {
+		}
+}
+.comment {
+
+		&__text {
+		}
+
+		&__sign {
+		}
+}
