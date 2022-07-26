@@ -1,202 +1,107 @@
+@import "_param";
 @import "_header";
+@import "_main";
 @import "_footer";
 
+h1 {
+	@include Lato-B(#222222);
+	font-size: 60px;
+	text-transform: uppercase;
+}
+h3 {
+	@include lato-300(#fff);
+	font-size: 20px;
+}
 .wrapper {
-    min-height: 100%;
+    height: 100vh;
     display: grid;
-    grid-template: minmax(100px, auto) 1fr minmax(975px, auto) / 1fr;
+    grid-template: 1fr 1fr 1fr / 1fr;
+    // grid-template: minmax(100px, auto) 1fr minmax(975px, auto) / 1fr;
 }
-.header {
-background: #000;
-		&__top {
-		}
 
-		&__logo {
-		}
-
-		&__center {
-		}
-
-		&__browse {
-		}
-
-		&__form {
-		}
-
-		&__search-btn {
-		}
-
-		&__right {
-		}
-
-		&__cart {
-		}
-
-		&__account {
-		}
-
-		&__menu {
-		}
-
-		&__list {
-		}
-
-		&__link {
-		}
+.red {
+	color: $_red;;
 }
+.bold {
+	font-weight: 900;
+	@include Lato-B($_red);
+}
+.link:hover {
+	color: $_red;
+}
+
+.btn_red{
+	background: #fff;
+	color: rgb(241, 109, 127);
+	border: none;
+	border: 1px solid rgb(241, 109, 127);
+	transition: ease color, background 0.9s;
+}
+
+.btn_red:not(:hover) {
+	background: #f16d7f;
+	color: white;
+	transition: ease color, background 1.9s;
+}
+
+.btn_red-social{
+	background: #f16d7f;
+	color: white;
+	border: none;
+	transition: ease color, background 0.9s;
+}
+.btn_red-social:not(:hover) {
+	background: #fff;
+	color: rgb(178,178,178);
+	transition: ease color, background 1.9s;
+}
+.btn_red-social:active:hover {
+	background: rgb(238, 238, 238);
+	color: rgb(214, 214, 214);
+}
+
+
+.list_dwn::after{
+	@include dwn_list(#fff);
+	right: 20px;
+}
+.list_dwn:hover::after{
+	@include dwn_list($_red);
+	right: 20px;
+}
+
 .logo {
+	display: flex;
 }
-.main {
-
-		&__banner {
-		}
-
-		&__category {
-		}
-
-		&__item {
-		}
-
-		&__feature {
-		}
+.logo img {
+	width: 59px;
+	height: fit-content;
+	margin-right: 13px;
 }
-.banner {
-
-		&__header {
-
-			&_text {
-			}
-		}
-
-		&__image {
-		}
+.logo p {
+	display: flex;
+	margin-top: 7px;
+	text-transform: uppercase;
+	@include lato-300(#222222);
+	font-size: 27px;
+	letter-spacing: 1px;
+	line-height: 32px;
 }
-.category {
 
-		&__item {
 
-			&_big {
-			}
-		}
-
-		&__image {
-		}
-
-		&__bage {
-		}
+@font-face {
+	font-family: Lato;
+	src: url("../fonts/Lato/Lato-Regular.ttf");
 }
-.item {
-
-		&__title {
-		}
-
-		&__gallery {
-		}
-
-		&__btn {
-		}
+@font-face {
+	font-family: Lato-B;
+	src: url("../fonts/Lato/Lato-Black.ttf");
 }
-.gallery {
-
-		&__items {
-		}
-
-		&__card {
-		}
+@font-face {
+	font-family: Lato-L;
+	src: url("../fonts/Lato/Lato-Light.ttf");
 }
-.card {
-
-		&__link {
-		}
-
-		&__btn {
-		}
-
-		&__description {
-		}
-
-		&__price {
-		}
-}
-.fa {
-}
-.fa-solid {
-}
-.fa-basket-shopping {
-}
-.feature {
-
-		&__offer {
-		}
-
-		&__articles {
-		}
-
-		&__article {
-		}
-
-		&__text {
-		}
-}
-.footer {
-
-
-		&_subscribe-text {
-		}
-
-		&__top {
-		}
-
-		&__background {
-		}
-
-		&__comment {
-		}
-
-		&__subs {
-		}
-
-		&__form {
-		}
-
-		&__mid {
-		}
-
-		&__logo {
-		}
-
-		&__description {
-		}
-
-		&__nav {
-		}
-
-		&__menu {
-		}
-
-		&__title {
-		}
-
-		&__list {
-		}
-
-		&__link {
-		}
-
-		&__bottom {
-		}
-
-		&__rights {
-		}
-
-		&__social {
-		}
-}
-.comment {
-
-		&__text {
-		}
-
-		&__sign {
-		}
+@font-face {
+	font-family: Lato-I;
+	src: url("../fonts/Lato/Lato-Italic.ttf");
 }

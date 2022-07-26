@@ -1,3 +1,123 @@
-p {
-    color: aqua;
+@import "_mixins";
+@import "_param";
+
+.header {
+    padding-top: 25px;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr $_site-width 1fr;
+    grid-template-areas: ". top ."
+                         ". nav .";
+    align-items: center;
+
+    &__top {
+            display: grid;
+            // grid-template: 1fr / 1fr 1fr 1fr 1fr;
+            grid-template: 1fr / minmax(130px, auto) minmax(400px, auto) 1fr minmax(190px,auto);
+
+            align-items: center;
+            grid-column: 2/3;
+            grid-area: top;
+        }
+
+		&__logo {
+            align-items: center;
+		}
+
+		&__center {
+			display: flex;
+			align-items: center;
+            margin-left: 36px;
+		}
+
+		&__browse {
+			width: 87px;
+			height: 38px;
+			border-radius: 3px 0 0 3px;
+			background-image: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
+			border: $_border_1;
+			padding: 0 13px;
+
+			@include lato-300(#222222);
+			position: relative;
+		}
+		&__browse::after {
+            @include dwn_list(#6e6e6e);
+		}
+
+		&__form {
+			display: flex;
+			align-items: center;
+		}
+
+		&__form input{
+			width: 317px;
+			height: 38px;
+			background-color: #ffffff;
+			border: $_border_1;
+			border-width: 1px 0 1px 0;
+			padding: 0 17px;
+			
+			@include lato-300(#a4a4a4);
+		}
+		
+		&__search-btn {
+			height: 38px;
+			width: 35px;
+			background-color: #ffffff;
+			border-radius: 0 3px 3px 0;
+			border: $_border_1;
+
+			@include lato-300(#a4a4a4);
+		}
+		
+		&__search-btn:hover{
+			cursor: pointer;
+		}
+
+		&__right {
+            grid-column: 4/5;
+		}
+
+		&__cart {
+		}
+
+		&__cart img{
+			width: 32px;
+			height: 29px;
+			margin-right: 25px;
+		}
+        
+		&__account {
+            display: inline-block;
+			width: 131px;
+			height: 38px;
+			padding-left: 20px;
+            padding-right: 12px;
+			line-height: 38px;
+            position: relative;
+		}
+
+		&__menu {
+            grid-area: nav;
+            margin: 0 auto;
+            min-width: 52%;
+			display: flex;
+			align-items: center;
+		}
+
+		&__list {
+            display: grid;
+            grid-auto-flow: column;
+            justify-items: center;
+		}
+        
+        &__list li{
+            padding-left: 22px;
+            padding-right: 22px;
+        }
+
+		&__link {
+            @include lato-700(#222222);
+            text-transform: uppercase;
+		}
 }

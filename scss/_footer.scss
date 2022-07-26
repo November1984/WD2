@@ -1,0 +1,245 @@
+@import "_mixins";
+@import "_param";
+
+.footer {
+    margin-top: 100px;
+    display: grid;
+    grid-template-rows: 0fr 0fr 0fr;
+    grid-template-areas: "top"
+                         "mid"
+                         "bottom";
+    
+    &_subscribe-text {
+    }
+    
+    &__top {
+        grid-area: top;
+        display: grid;
+        grid-template: 1fr / 1fr $_site-width 1fr;
+        height: 440px;
+        overflow: hidden;
+        background-color: rgb(238,238,238);
+    }
+
+    &__background {
+        position: relative;
+        width: $_site-width;
+        grid-column: 2/3;
+        display: flex;
+        align-items: center;
+    }
+    &__image {
+        position: absolute;
+        margin-top: -140px;
+        left: -240px;
+        opacity: 0.5;
+        align-self: flex-start;
+    }
+    &__comment {
+        display: flex;
+        top: 110px;
+        position: absolute;
+    }
+
+    &__comment img{
+        margin-top: 23px;
+    }
+
+    &__subs {
+        position: absolute;
+        left: 686px;
+    }
+
+    &__form {
+    }
+
+    &__pages {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__mid {
+        grid-area: mid;
+        display: grid;
+        grid-template: 1fr / 1fr $_site-width 1fr;
+        height: 457px;
+        overflow: hidden;
+    }
+    
+    &__content {
+        grid-column: 2/3;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+    }
+
+    &__bottom {
+        grid-area: bottom;
+        display: grid;
+        grid-template: 1fr / 1fr $_site-width 1fr;
+        align-items: center;
+        height: 80px;
+        background-color: #e6e6e6;
+    }
+
+    &__rights {
+        @include lato-300(#7a7a7a);
+        font-size: 16px;
+        line-height: 42px;
+    }
+
+    &__social {
+
+    }
+    &__social button{
+        margin: 3px;
+        height: 30px;
+        width: 30px;
+        // background-color: #fff;
+    }
+    // &__social button:hover {
+    //     background-color: $_red;
+    // }
+    // &__social button:hover .fa-brands {
+    //     color: #fff;
+    // }
+}
+.page {
+    margin-top: 70px;
+    margin-left: 72px;
+    position: relative;
+    padding: 10px;
+
+    &:hover &__item_selected:hover{
+        background-color: $_red;
+    }
+    &:hover &__item_selected{
+        background-color: #d6d6d6;
+    }
+
+    &__item {
+        width: 40px;
+        height: 4px;
+        margin: 12px;
+        background-color: #d6d6d6;
+
+        &_selected {
+            background-color: $_red;
+        }
+    }
+
+    &__item:hover {
+        background-color: $_red;
+        cursor: pointer;
+    }
+}
+
+.comment {
+    
+    &__image {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__text {
+        width: 386px;
+        @include Lato-I(#222222);
+        margin-left: 28px;
+    }
+
+    &__sign {
+        margin-top: 19px;
+        @include Lato-L(#222222);
+        font-size: 12px;
+        line-height: 14px;
+    }
+    &__sign span{
+        @include Lato-B(#f16d7f);
+        font-size: 16px;
+    }
+}
+
+.subs {
+    text-transform: uppercase;
+
+    &__text {
+        @include lato-300 (#222222);
+        line-height: 24px;
+        text-align: center;
+    }
+    &__text span{
+        font-size: 24px;
+    }
+
+    &__form {
+        margin-top: 34px;
+        display: flex;
+    }
+    &__form input{
+        width: 285px;
+        height: 46px;
+        border-radius: 25px 0 0 25px;
+        padding: 0 25px;
+    }
+    &__form button {
+        border-radius: 0 25px 25px 0;
+        width: 105px;
+    }
+}
+.mid {
+
+    &__logo {
+        margin-top: 110px;
+        position: absolute;
+    }
+    
+    &__description {
+        margin-top: 190px;
+        width: 430px;
+        @include lato-300(#898989);
+        line-height: 24px;
+
+    }
+    &__description p{
+        margin-top: 30px;
+    }
+
+    &__nav {
+        margin-left: 64px;
+        margin-top: 110px;
+        display: flex;
+        width: 610px;
+        justify-content: space-between;
+    }
+
+    &__menu {
+    }
+    
+    &__title {
+        @include lato-700($_red);
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    &__list {
+        @include lato-300(#898989);
+        font-size: 16px;
+        line-height: 55px;
+        margin-top: 30px;
+    }
+    
+    &__link {
+        
+    }
+}
+
+// .fa-brands {
+//     font-size: 16px;
+//     color: #b2b2b2;
+//     line-height: 33px;
+// }
