@@ -1,0 +1,64 @@
+@mixin lato-300 ($color) {
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 36px;
+    font-weight: 300;
+    font-family: "Lato";
+    color: $color;
+    font-style: normal;
+}
+@mixin lato-700 ($color) {
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    font-family: "Lato";
+    color: $color;
+}
+@mixin lato-900 ($color) {
+    font-size: 60px;
+    letter-spacing: 2px;
+    font-family: "Lato";
+    font-weight: 900;
+    color: $color;
+}
+@mixin Lato-L ($color) {
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    font-weight: 300;
+    font-family: "Lato-L";
+    color: $color;
+    font-style: normal;
+}
+@mixin Lato-B ($color) {
+    font-size: 27px;
+    letter-spacing: 1px;
+    font-family: "Lato-B";
+    color: $color;
+}
+@mixin Lato-I ($color) {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    font-family: "Lato-I";
+    font-weight: 400;
+    color: $color;
+}
+
+@mixin dwn_list ($color){
+	content: "";
+    position: absolute;
+    color: inherit;
+    right: 7px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    pointer-events: all;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    top: 55%;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: $color transparent transparent transparent;
+}
