@@ -3,6 +3,10 @@
 @import "_main";
 @import "_footer";
 
+body{
+
+}
+
 h1 {
 	@include Lato-B(#222222);
 	font-size: 60px;
@@ -15,9 +19,11 @@ h3 {
 .wrapper {
     height: 100vh;
     display: grid;
-    grid-template: 1fr 1fr 1fr / 1fr;
+	padding: 0 15px;
+	box-sizing: content-box;
+    grid-template: 1fr 1fr minmax(975px, auto) / 1fr;
     // grid-template: minmax(100px, auto) 1fr minmax(975px, auto) / 1fr;
-}
+} 
 
 .red {
 	color: $_red;;
@@ -63,11 +69,11 @@ h3 {
 
 .list_dwn::after{
 	@include dwn_list(#fff);
-	right: 20px;
+	right: 15px;
 }
 .list_dwn:hover::after{
 	@include dwn_list($_red);
-	right: 20px;
+	right: 15px;
 }
 
 .logo {
@@ -76,10 +82,10 @@ h3 {
 .logo img {
 	width: 59px;
 	height: fit-content;
-	margin-right: 13px;
+	margin-right: 8px;
 }
 .logo p {
-	display: flex;
+	display: inline-block;
 	margin-top: 7px;
 	text-transform: uppercase;
 	@include lato-300(#222222);
@@ -87,7 +93,6 @@ h3 {
 	letter-spacing: 1px;
 	line-height: 32px;
 }
-
 
 @font-face {
 	font-family: Lato;
