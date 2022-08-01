@@ -1,7 +1,5 @@
 @import "_param";
-@import "_header";
-@import "_main";
-@import "_footer";
+@import "_mixins";
 
 body{
 
@@ -9,13 +7,25 @@ body{
 
 h1 {
 	@include Lato-B(#222222);
-	font-size: 60px;
+	font-size: 25px;
 	text-transform: uppercase;
 }
 h3 {
 	@include lato-300(#fff);
 	font-size: 20px;
 }
+._ibg {
+	position: relative;
+}
+._ibg img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+
 .wrapper {
     height: 100vh;
     display: grid;
@@ -94,6 +104,11 @@ h3 {
 	line-height: 32px;
 }
 
+@import "_header";
+@import "_main";
+@import "_footer";
+
+
 @font-face {
 	font-family: Lato;
 	src: url("../fonts/Lato/Lato-Regular.ttf");
@@ -110,3 +125,4 @@ h3 {
 	font-family: Lato-I;
 	src: url("../fonts/Lato/Lato-Italic.ttf");
 }
+

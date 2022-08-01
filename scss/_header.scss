@@ -1,5 +1,4 @@
-@import "_mixins";
-@import "_param";
+
 
 .header {
     padding-top: 25px;
@@ -152,7 +151,7 @@
 			height: 38px;
 			padding-left: 20px;
             padding-right: 12px;
-			@include lato-300(#fff);
+			@include lato-300($_red);
 			font-size: 15px;
 			line-height: calc(34 / 15 * 100%);
 		}
@@ -187,8 +186,7 @@
 		width: 100%;
 	}
 	
-	&__list li{
-		padding-left: 22px;
+	&__list > *:not(:last-child){
 		padding-right: 22px;
 	}
 
