@@ -1,9 +1,9 @@
 
 
 .footer {
-    margin-top: 100px;
+
     display: grid;
-    grid-template-rows: 0fr 0fr 0fr;
+    grid-template-rows: 0fr 1fr 0fr;
     grid-template-areas: "top"
                          "mid"
                          "bottom";
@@ -14,18 +14,43 @@
     &__top {
         grid-area: top;
         display: grid;
-        grid-template: 1fr / 1fr $_site-width 1fr;
+        grid-template: 1fr / 1fr minmax(300px, $_site-width) 1fr;
         height: 440px;
         overflow: hidden;
         background-color: rgb(238,238,238);
     }
-
+}
+.top {
     &__background {
         position: relative;
-        width: $_site-width;
+        // width: $_site-width;
         grid-column: 2/3;
         display: flex;
         align-items: center;
+        justify-content: center;
+    }
+    @media (min-width:661px){
+        &__background{
+            justify-content: space-between;
+        }
+    }
+    &__content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    @media (min-width:661px){
+        &__content{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+    }
+    @media (min-width:769px){
+        &__content {
+            width: 100%;
+            justify-content: space-between;
+        }
     }
     &__image {
         position: absolute;
@@ -36,17 +61,12 @@
     }
     &__comment {
         display: flex;
-        top: 110px;
-        position: absolute;
-    }
-
-    &__comment img{
-        margin-top: 23px;
+        position: relative;
+        flex-direction: column;
     }
 
     &__subs {
-        position: absolute;
-        left: 686px;
+        position: relative;
     }
 
     &__form {
@@ -54,15 +74,14 @@
 
     &__pages {
         display: flex;
-        justify-content: space-between;
     }
-
+}
+.footer{
     &__mid {
         grid-area: mid;
         display: grid;
-        grid-template: 1fr / 1fr $_site-width 1fr;
-        height: 457px;
-        overflow: hidden;
+        grid-template: 1fr / 1fr minmax(300px, $_site-width) 1fr;
+        height: 100%;
     }
     
     &__content {
@@ -70,45 +89,80 @@
         display: flex;
         position: relative;
         justify-content: space-between;
+        margin-top: 20px;
     }
-
+    @media (min-width: 481px){
+        &__content {
+            margin-top: 40px;
+        }
+    }
+    @media (min-width: 661px){
+        &__content {
+            margin-top: 90px;
+        }
+    }
+    @media (min-width: 1024px){
+        &__content {
+            margin-top: 110px;
+        }
+    }
     &__bottom {
         grid-area: bottom;
         display: grid;
-        grid-template: 1fr / 1fr $_site-width 1fr;
+        grid-template: 1fr / 1fr minmax(300px, $_site-width) 1fr;
         align-items: center;
         height: 80px;
         background-color: #e6e6e6;
     }
 
+}
+.bottom {
+    &__content {
+        grid-column: 2/3;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+    @media (min-width: 481px){
+        &__content {
+            padding-top: 0;
+        }
+    }
     &__rights {
         @include lato-300(#7a7a7a);
-        font-size: 16px;
-        line-height: 42px;
+        font-size: 12px;
+        line-height: 16px;
     }
-
+    @media (min-width: 481px){
+        &__rights {
+            font-size: 16px;
+            line-height: calc(42 / 16 * 100%);
+        }
+    }
     &__social {
 
     }
     &__social button{
         margin: 3px;
+        height: 20px;
+        width: 20px;
+    }
+    @media (min-width:481px){
+        &__social button {
         height: 30px;
         width: 30px;
-        // background-color: #fff;
-    }
-    // &__social button:hover {
-    //     background-color: $_red;
-    // }
-    // &__social button:hover .fa-brands {
-    //     color: #fff;
-    // }
+        }
+  }
 }
 .page {
-    margin-top: 70px;
+    margin-top: 30px;
     margin-left: 72px;
     position: relative;
     padding: 10px;
-
+    @media (min-width:661px){
+            margin-top: 70px;
+    }
     &:hover &__item_selected:hover{
         background-color: $_red;
     }
@@ -134,23 +188,29 @@
 }
 
 .comment {
-    
+    &__box{
+        display: flex;
+    }
+
     &__image {
         height: 80px;
-        width: 80px;
+        min-width: 80px;
         border-radius: 50%;
         overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     &__text {
-        width: 386px;
+        max-width: 386px;
         @include Lato-I(#222222);
-        margin-left: 28px;
+        font-size: 14px;
+        margin-left: 20px;
     }
-
+    @media(min-width:360px){
+        &__text {
+            margin-left: 28px;
+            font-size: 16px;
+        }
+    }
     &__sign {
         margin-top: 19px;
         @include Lato-L(#222222);
@@ -180,29 +240,36 @@
         display: flex;
     }
     &__form input{
-        width: 285px;
+        max-width: 170px;
+        width: 100%;
         height: 46px;
         border-radius: 25px 0 0 25px;
         padding: 0 25px;
     }
+
+    @media (min-width:769px){
+        &__form input{
+            width: 285px;
+        }
+    }
+
     &__form button {
         border-radius: 0 25px 25px 0;
-        width: 105px;
+        min-width: 105px;
     }
 }
 .mid {
 
     &__logo {
-        margin-top: 110px;
         position: absolute;
     }
     
     &__description {
-        margin-top: 190px;
-        width: 430px;
+        margin-top: 45px;
+        max-width: 430px;
         @include lato-300(#898989);
         line-height: 24px;
-
+        flex: 1 1 0;
     }
     &__description p{
         margin-top: 30px;
@@ -210,10 +277,12 @@
 
     &__nav {
         margin-left: 64px;
-        margin-top: 110px;
         display: flex;
-        width: 610px;
+        max-width: 610px;
+        width: 100%;
         justify-content: space-between;
+        flex-wrap: wrap;
+        flex: 1 1 0;
     }
 
     &__menu {
@@ -221,15 +290,34 @@
     
     &__title {
         @include lato-700($_red);
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 16px;
+        line-height: calc (24 / 16 * 100%);
+        margin-top: 20px;
     }
-
+    @media (min-width:1024px){
+        &__title {
+            margin-top: 0;
+        }
+    }
+    @media (min-width:1024px){
+        &__title {
+            font-size: 18px;
+            line-height: calc (26 / 18 * 100%);
+        }
+    }
     &__list {
         @include lato-300(#898989);
-        font-size: 16px;
-        line-height: 55px;
-        margin-top: 30px;
+        margin-top: 10px;
+        line-height: 26px;
+        font-size: 14px;
+    }
+    
+    @media (min-width:1024px){
+        &__list{
+            font-size: 16px;
+            line-height: 55px;
+            margin-top: 30px;
+        }
     }
     
     &__link {
@@ -237,8 +325,3 @@
     }
 }
 
-// .fa-brands {
-//     font-size: 16px;
-//     color: #b2b2b2;
-//     line-height: 33px;
-// }

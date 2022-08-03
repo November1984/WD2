@@ -12,8 +12,16 @@ h1 {
 }
 h3 {
 	@include lato-300(#fff);
-	font-size: 20px;
+	font-size: 16px;
+	line-height: 20px;
 }
+@media (min-width:661px){
+	h3 {
+		font-size: 20px;
+		line-height: 36px;
+	}
+}
+
 ._ibg {
 	position: relative;
 }
@@ -103,6 +111,8 @@ h3 {
 	letter-spacing: 1px;
 	line-height: 32px;
 }
+
+
 
 @import "_header";
 @import "_main";
