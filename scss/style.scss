@@ -13,15 +13,19 @@ h1 {
 h3 {
 	@include lato-300(#fff);
 	font-size: 16px;
-	line-height: 20px;
+	line-height: calc(20 / 16 * 100%);
 }
 @media (min-width:661px){
 	h3 {
 		font-size: 20px;
-		line-height: 36px;
+		line-height: calc(36 / 20 * 100%);
 	}
 }
-
+h4 {
+	@include lato-300(#222222);
+	line-height: calc(32 / 14 * 100%);
+	text-transform: uppercase;
+}
 ._ibg {
 	position: relative;
 }
