@@ -480,12 +480,14 @@ h4 {
 
 .nav__item {
   padding-bottom: 10px;
+  position: relative;
 }
 
 .nav__item:hover .nav__mega-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  top: 32px;
 }
 
 .nav__item:hover:after {
@@ -494,6 +496,7 @@ h4 {
   width: 15px;
   height: 15px;
   top: 26px;
+  left: 10px;
   z-index: 200;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -514,6 +517,10 @@ h4 {
   text-transform: uppercase;
 }
 
+.nav__mega-menu {
+  z-index: 120;
+}
+
 .browse {
   position: relative;
 }
@@ -521,6 +528,7 @@ h4 {
 .browse__menu {
   top: 100%;
   left: 0;
+  z-index: 120;
 }
 
 @media (min-width: 661px) {
@@ -535,9 +543,6 @@ h4 {
   background: #fff;
   display: none;
   position: absolute;
-  z-index: 120;
-  max-height: 531px;
-  min-width: 190px;
   overflow-y: auto;
   overflow-x: hidden;
   border-radius: 5px;
@@ -597,8 +602,24 @@ h4 {
           justify-content: space-between;
   padding-bottom: 20px;
   border: 1px solid #e6e6e6;
-  top: 32px;
+  max-height: 531px;
+  min-width: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 80%;
+}
+
+@media (min-width: 661px) {
+  .mm__center {
+    left: -300px;
+  }
+}
+
+@media (min-width: 661px) {
+  .mm__right {
+    left: -400px;
+  }
 }
 
 @media (min-width: 769px) {

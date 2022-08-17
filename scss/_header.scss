@@ -200,9 +200,11 @@
 	}
 	&__item {
 		padding-bottom: 10px;
+		position: relative;
 	}
-	&__item:hover &__mega-menu{
+	&__item:hover .nav__mega-menu{
 		display: flex;
+		top: 32px;
 	}
 	&__item:hover:after {
 		content: "";
@@ -210,6 +212,7 @@
 		width:  15px;
 		height: 15px;
 		top: 26px;
+		left: 10px;
 		z-index: 200;
 		transform: rotate(45deg);
 		border-left: 1px solid #e8e8e8;
@@ -241,6 +244,9 @@
 		@include lato-700(#222222);
 		text-transform: uppercase;
 	}
+	&__mega-menu {
+		z-index: 120;
+	}
 }
 
 
@@ -251,6 +257,7 @@
 	&__menu {
 		top: 100%;
 		left: 0;
+		z-index: 120;
 	}
 	@media (min-width:661px){
 		&__menu{
@@ -264,9 +271,6 @@
 	background: #fff;
 	display: none;
 	position: absolute;
-	z-index: 120;
-	max-height: 531px;
-	min-width: 190px;
 	overflow-y: auto;
 	overflow-x: hidden;
 	border-radius: 5px;
@@ -323,21 +327,23 @@
 		justify-content: space-between;
 		padding-bottom: 20px;
 		border: $_border_1;
-		top: 32px;
-		// left: 14%;
+		max-height: 531px;
+		min-width: 190px;
+		display: flex;
 		max-width: 80%;
 
-		&_center{	
+	}
+	&__center{	
+
+	}
+	@media (min-width:661px){
+		&__center{	
+			left: -300px;
 		}
-		@media (min-width:661px){
-			&_center{	
-				// left: 39%;
-			}
-		}
-		@media (min-width:661px){
-			&_right{	
-				// left: 50%;
-			}
+	}
+	@media (min-width:661px){
+		&__right{	
+			left: -400px;
 		}
 	}
 
