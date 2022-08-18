@@ -1,50 +1,36 @@
-.main {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 0fr 0fr;
-  -ms-grid-columns: 1fr minmax(300px, 1140px) 1fr;
-      grid-template: 0fr 0fr/1fr minmax(300px, 1140px) 1fr;
-      grid-template-areas: "slider slider slider" ". content .";
-}
+@import "_param";
 
+
+.main {
+  display: grid;
+  grid-template:  0fr 0fr / 1fr minmax(300px, $_site-width) 1fr;
+  grid-template-areas: "slider slider slider"
+                       ". content ."
+}
 .slider {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   grid-area: slider;
   background-color: #e8e8e8;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 0fr;
-  -ms-grid-columns: 1fr minmax(300px, 1140px) 1fr;
-      grid-template: 0fr/1fr minmax(300px, 1140px) 1fr;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  grid-template:  0fr / 1fr minmax(300px, $_site-width) 1fr;
+  align-content: center;
 }
-
 .content {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: content;
 }
-
 .container {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
   grid-column: 2/3;
 }
-
 .products__box {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto calc(var(min-content) * 30%) [5];
-  grid-template-columns: auto repeat(5, calc(var(-webkit-min-content) * 30%));
-  grid-template-columns: auto repeat(5, calc(var(min-content) * 30%));
-  -ms-grid-rows: auto [3];
-  grid-template-rows: repeat(3, auto);
+  -ms-grid-columns: auto (calc(var(min-content) * 30%))[5];
+      grid-template-columns: auto repeat(5, calc(var(-webkit-min-content) * 30%));
+      grid-template-columns: auto repeat(5, calc(var(min-content) * 30%));
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   justify-items: center;
 }
 
@@ -81,13 +67,13 @@ table {
 .products__box2 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr --data-column-width [5];
-  grid-template-columns: 1fr repeat(5, --data-column-width);
-  -ms-grid-rows: auto [3];
-  grid-template-rows: repeat(3, auto);
+  -ms-grid-columns: 1fr (--data-column-width)[5];
+      grid-template-columns: 1fr repeat(5, --data-column-width);
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   justify-items: center;
 }
 
@@ -122,7 +108,7 @@ table {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: subgrid;
-  grid-template-columns: subgrid;
+      grid-template-columns: subgrid;
 }
 
 .products__box input {
@@ -137,7 +123,6 @@ table {
   overflow: hidden;
   margin: 17px;
 }
-
 .cart__image2 {
   position: relative;
 }
@@ -191,8 +176,8 @@ table {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .cart-form {
@@ -201,8 +186,8 @@ table {
   display: flex;
   margin-top: 63px;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 78px;
 }
 
@@ -212,8 +197,8 @@ table {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .cart-form__column p {
@@ -231,8 +216,8 @@ table {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .cart-form__header {
@@ -294,15 +279,16 @@ table {
 
 .cart-form__checkout {
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 214px;
   background-color: #f5f3f3;
 }
-
 .btns__item2 {
   color: #f16d7f;
 }
+
+
 
 .checkout__content {
   width: 275px;
@@ -349,3 +335,4 @@ table {
   background: #f16d7f;
   font-size: 14px;
 }
+/*# sourceMappingURL=cart.css.map */

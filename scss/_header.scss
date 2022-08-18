@@ -4,7 +4,6 @@
     padding-top: 25px;
     display: grid;
     grid-template: 0fr minmax(52px, 1fr) / 1fr minmax(300px, $_site-width) 1fr;
-    // grid-template: 1fr minmax(52px, 1fr) / 1fr minmax(300px, $_site-width) 1fr;
     grid-template-areas: ". top ."
                          ". nav .";
     align-items: center;

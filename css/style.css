@@ -1605,7 +1605,7 @@ h4 {
   position: relative;
 }
 
-.top__pages {
+.top__c-pages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1725,7 +1725,7 @@ h4 {
   }
 }
 
-.page {
+.c-page {
   margin-top: 30px;
   margin-left: 72px;
   position: relative;
@@ -1733,31 +1733,31 @@ h4 {
 }
 
 @media (min-width: 661px) {
-  .page {
+  .c-page {
     margin-top: 70px;
   }
 }
 
-.page:hover .page__item_selected:hover {
+.c-page:hover .c-page__item_selected:hover {
   background-color: #f16d7f;
 }
 
-.page:hover .page__item_selected {
+.c-page:hover .c-page__item_selected {
   background-color: #d6d6d6;
 }
 
-.page__item {
+.c-page__item {
   width: 40px;
   height: 4px;
   margin: 12px;
   background-color: #d6d6d6;
 }
 
-.page__item_selected {
+.c-page__item_selected {
   background-color: #f16d7f;
 }
 
-.page__item:hover {
+.c-page__item:hover {
   background-color: #f16d7f;
   cursor: pointer;
 }

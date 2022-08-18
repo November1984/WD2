@@ -1,72 +1,54 @@
+@import "_param";
+@import "_mixins";
+
+
 .main {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: (0fr)[4];
-  -ms-grid-columns: 1fr minmax(300px, 1140px) 1fr;
-      grid-template: repeat(4, 0fr)/1fr minmax(300px, 1140px) 1fr;
-      grid-template-areas: "slider slider slider" "banner banner banner" ". content ." ". content .";
-}
-
+    display: grid;
+    grid-template:  repeat(4, 0fr) / 1fr minmax(300px, $_site-width) 1fr;
+    grid-template-areas: "slider slider slider"
+                         "banner banner banner"
+                         ". content ."
+                         ". content ."
+  }
 .slider {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: slider;
-  background-color: #f8f3f4;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 0fr;
-  -ms-grid-columns: 1fr minmax(300px, 1140px) 1fr;
-      grid-template: 0fr/1fr minmax(300px, 1140px) 1fr;
-  -ms-flex-line-pack: center;
-      align-content: center;
+    grid-area: slider;
+    background-color: #f8f3f4;
+    display: grid;
+    grid-template:  0fr / 1fr minmax(300px, $_site-width) 1fr;
+    align-content: center;
 }
-
 .content {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
-  grid-area: content;
+    grid-area: content;
 }
-
 .container {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
+    grid-column: 2/3;
 }
 
 .smain__banner {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: banner;
-  position: relative;
-  background-color: #f7f7f7;
+    grid-area: banner;
+    position: relative;
+    // display: grid;
+    // grid-template: 1fr / 1fr minmax(300px, $_site-width) 1fr;
+    background-color: #f7f7f7;
 }
-
 .slide-btns {
-  position: absolute;
-  top: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  pointer-events: none;
+    position: absolute;
+    top: 40%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    pointer-events: none;
 }
-
 .slide-btn {
-  width: 48px;
-  height: 48px;
-  background-color: rgba(42, 42, 42, 0.14902);
-  font-size: 36px;
-  color: #fff;
-  text-align: center;
-  line-height: 48px;
-  pointer-events: auto;
-  cursor: pointer;
+    width: 48px;
+    height: 48px;
+    background-color: rgba(42,42,42,0.14901960784313725);
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+    pointer-events: auto;
+    cursor: pointer;
 }
 
 .main-img {
@@ -162,8 +144,8 @@
   font-family: "Lato";
   text-align: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .desc__data span {
@@ -190,8 +172,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 27px;
 }
 
@@ -219,30 +201,27 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .single_btn {
   width: 538px;
   height: 55px;
-  font-size: 27px;
-  letter-spacing: 1px;
-  font-family: "Lato-B";
-  color: #4d4d4d;
+  @include Lato-B(#4d4d4d);
   font-size: 16px;
   line-height: 55px;
-}
 
+}
 .single_btn img {
-  max-height: 27px;
-  margin: 15px;
+    max-height: 27px;
+    margin: 15px;
 }
 
 .select-box__select2 {
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: none;
   outline: none;
   background: #fff;
@@ -276,8 +255,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .may-like__link {
@@ -291,7 +270,7 @@
 
 .may-like__item:hover {
   -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.45);
-  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.45);
+          box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.45);
 }
 
 .may-like__description {
@@ -323,18 +302,18 @@
   width: var(--box-width);
   height: var(--box-height);
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   border: 1px solid var(--border-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: auto 5px;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .box__left {
@@ -343,8 +322,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   /*   border: 1px solid red; */
   width: Min(22%, 20px);
 }
@@ -354,7 +333,7 @@
   padding-top: 65%;
   margin: 0 15%;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .box__right {
@@ -364,8 +343,8 @@
   display: flex;
   position: relative;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .box__right-item {
@@ -375,8 +354,8 @@
   display: flex;
   position: relative;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .box__text {
@@ -397,8 +376,7 @@
   top: 50%;
   right: 5px;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+  transform: translateY(-50%);
   display: block;
   pointer-events: all;
   cursor: pointer;
@@ -454,7 +432,7 @@
   height: calc(var(--box-height) - 6px);
   margin: 5px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .menu__item:hover {
@@ -466,3 +444,4 @@
   padding-right: 0;
   margin-right: 0;
 }
+/*# sourceMappingURL=single.css.map */
