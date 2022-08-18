@@ -86,7 +86,6 @@ h3 {
 }
 
 summary {
-  display: block;
   font-size: 16px;
   color: #222222;
   font-weight: 700;
@@ -96,10 +95,6 @@ summary {
 
 summary:hover {
   color: #ff0d0d;
-}
-
-summary::-webkit-details-marker {
-  display: none;
 }
 
 .co_list_title {
@@ -200,6 +195,7 @@ summary::-webkit-details-marker {
   margin-bottom: 20px;
   background-color: #ffffff;
   border: 1px solid #eaeaea;
+  padding: 0 10px;
 }
 
 .co_form_r_h3 {

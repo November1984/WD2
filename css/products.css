@@ -4,7 +4,7 @@
   -ms-grid-rows: 0fr 0fr;
   -ms-grid-columns: 1fr minmax(300px, 1140px) 1fr;
       grid-template: 0fr 0fr/1fr minmax(300px, 1140px) 1fr;
-      grid-template-areas: "slider slider slider" ". content .";
+      grid-template-areas: "slider slider slider" ". content ." ". bottom .";
 }
 
 .slider {
@@ -340,6 +340,9 @@
 }
 
 .product_main_bottom {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: bottom;
   height: 341px;
   background-color: #222224;
   margin-top: 110px;

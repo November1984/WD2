@@ -18,8 +18,9 @@
 </head>
 
 <body>
-
-
+<div class="wrapper">
+    
+    
     <header class="header">
         <div class="header__top">
             <a href="./index.html" class="header__logo logo">
@@ -27,12 +28,9 @@
                 <p>bran<span class="red bold">d</span></p>
             </a>
             <div class="header__center">
-                <div class="header__browse browse">Browse
-                    <div class="browse__bg-box bg-box">
-                        <div class="bg-box__browse-bak"></div>
-                        <div class="bg-box__browse-bak bg-box__browse-bak_hov">
-                        </div>
-                        <div class="browse__menu menu">
+                <details class="header__browse browse">
+                    <summary>Browse</summary>
+                        <nav class="browse__menu menu">
                             <h4 class="menu__header">women</h4>
                                 <a class="link" href="#"><div class="menu__link">Dresses</div></a>
                                 <a class="link" href="#"><div class="menu__link">Tops</div></a>
@@ -50,9 +48,8 @@
                                 <a href="#" class="link"><div class="menu__link">Sweatshirts/Hoodies</div></a>
                                 <a href="#" class="link"><div class="menu__link">Blazers</div></a>
                                 <a href="#" class="link"><div class="menu__link">Jackets/vests</div></a>
-                        </div>
-                    </div>
-                </div>
+                        </nav>
+                </details>
                 <form action="#" method="get" class="header__form">
                     <input type="text" name="search" id="search" placeholder="Search for Item...">
                     <button type="submit" class="header__search-btn"><i class="fas fa-search" aria-hidden="true"></i></button>
@@ -61,7 +58,7 @@
             <div class="header__right">
                 <div class="header__cart"><img class="header__cart-logo" src="./img/index/cart.svg" alt="">
                     <div class="header__cart-menu cart-menu menu">
-                        <div class="cart-menu__box">
+                        <nav class="cart-menu__box">
                             <div class="cart-menu__items">
                                 <div class="cart-menu__item">
                                     <a href="./single.html" class="cart-menu__link">
@@ -114,7 +111,7 @@
                                 <a href="./checkout.html" class="carted__btn-links"><div class="btns__item btn_red-cart">Checkout</div></a>
                                 <a href="./cart.html" class="carted__btn-links"><div class="btns__item btn_red-cart">go to cart</div></a>
                             </div>
-                        </div>
+                        </nav>
                     </div>
                 </div>
 
@@ -447,253 +444,254 @@
             </ul>
         </nav>
     </header>
-
-    <!-- header end -->
-    <main class="main">
-    <section class="slider co_slider">
-        <div class="container co_slider_content">
-            <p class="co_slider_text">new arrivals</p>
-            <p class="bread_crumps"><a href="./index.html">Home</a> / <a href="#">Men</a> / <a href="#">New Arrivals</a> </p>
-        </div>
-    </section>        
-    <section class="smain__banner">
-        <div class="conteiner">
-            <div class="_ibg box">
-                <img src="./img/single/kate.png" alt="card image" class="main__img">
+    
+        <!-- header end -->
+        <main class="main">
+        <section class="slider co_slider">
+            <div class="container co_slider_content">
+                <p class="co_slider_text">new arrivals</p>
+                <p class="bread_crumps"><a href="./index.html">Home</a> / <a href="#">Men</a> / <a href="#">New Arrivals</a> </p>
             </div>
-        </div>
-        <div class="slide-btns">
-            <div class="slide-btn"><</div>
-            <div class="slide-btn">></div>
-        </div>
-    </section>
-    <section class=" container main-desc main-desc-box">
-        <div class="desc__box">
-            <div class="desc__devider">women collection</div>
-            <div class="desc__header">Moschino Cheap And Chic</div>
-            <div class="desc__caption">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</div>
-            <div class="desc__data">
-                <div class="data__item data__item_material">MATERIAL: <span>COTTON</span></div>
-                <div class="data__item data__item_designer">DESIGNER: <span>BINBURHAN</span></div>
+        </section>
+        <section class="smain__banner">
+            <div class="conteiner">
+                <div class="_ibg box">
+                    <img src="./img/single/kate.png" alt="card image" class="main__img">
+                </div>
             </div>
-            <div class="desc__price">$561</div>
-        </div>
-        <form action="" class="desc__form">
-            <div class="form__param">
-                <!-- color -->
-                <div class="form__column">
-                    <div class="param__name"><nobr>CHOOSE COLOR</nobr></div>
-                    <div class="box-color">
-                        <div class="edit-box">
-                            <div class="box__left">
-                            <div class="box__color box__color_grey"></div>
-                            </div>
-                            <div class="box__right">
-                            <div class="box__text item-text" >grey</div>
-                            </div>
-                        </div>
-                        <div class="edit-menu">
-                            <div class="menu__item">
-                            <div class="box__left">
+            <div class="slide-btns">
+                <div class="slide-btn"><</div>
+                <div class="slide-btn">></div>
+            </div>
+        </section>
+        <section class=" container main-desc main-desc-box">
+            <div class="desc__box">
+                <div class="desc__devider">women collection</div>
+                <div class="desc__header">Moschino Cheap And Chic</div>
+                <div class="desc__caption">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</div>
+                <div class="desc__data">
+                    <div class="data__item data__item_material">MATERIAL: <span>COTTON</span></div>
+                    <div class="data__item data__item_designer">DESIGNER: <span>BINBURHAN</span></div>
+                </div>
+                <div class="desc__price">$561</div>
+            </div>
+            <form action="" class="desc__form">
+                <div class="form__param">
+                    <!-- color -->
+                    <div class="form__column">
+                        <div class="param__name"><nobr>CHOOSE COLOR</nobr></div>
+                        <div class="box-color">
+                            <div class="edit-box">
+                                <div class="box__left">
                                 <div class="box__color box__color_grey"></div>
                                 </div>
-                            <div class="item__text box__right-item box__text">grey</div>
-                            </div>
-                            <div class="menu__item">
-                            <div class="box__left">
-                                <div class="box__color box__color_red"></div>
+                                <div class="box__right">
+                                <div class="box__text item-text" >grey</div>
                                 </div>
-                            <div class="item__text box__right-item box__text">red</div>
                             </div>
-                            <div class="menu__item">
-                            <div class="box__left">
-                                <div class="box__color box__color_yellow"></div>
+                            <div class="edit-menu">
+                                <div class="menu__item">
+                                <div class="box__left">
+                                    <div class="box__color box__color_grey"></div>
+                                    </div>
+                                <div class="item__text box__right-item box__text">grey</div>
                                 </div>
-                            <div class="item__text box__right-item box__text">yellow</div>
+                                <div class="menu__item">
+                                <div class="box__left">
+                                    <div class="box__color box__color_red"></div>
+                                    </div>
+                                <div class="item__text box__right-item box__text">red</div>
+                                </div>
+                                <div class="menu__item">
+                                <div class="box__left">
+                                    <div class="box__color box__color_yellow"></div>
+                                    </div>
+                                <div class="item__text box__right-item box__text">yellow</div>
+                                </div>
+                                <div class="menu__item">
+                                <div class="box__left">
+                                    <div class="box__color box__color_blue"></div>
+                                    </div>
+                                <div class="item__text box__right-item box__text">blue</div>
+                                </div>
+                                <div class="menu__item">
+                                <div class="box__left">
+                                    <div class="box__color box__color_green"></div>
+                                    </div>
+                                <div class="item__text box__right-item box__text">green</div>
+                                </div>
                             </div>
-                            <div class="menu__item">
-                            <div class="box__left">
-                                <div class="box__color box__color_blue"></div>
-                                </div>
-                            <div class="item__text box__right-item box__text">blue</div>
                             </div>
-                            <div class="menu__item">
-                            <div class="box__left">
-                                <div class="box__color box__color_green"></div>
+    
+                    </div>
+                    <!-- size -->
+                    <div class="form__column">
+                        <div class="param__name"><nobr>CHOOSE size</nobr></div>
+                        <div class="param__input">
+                            <div class="filter2__select-box">
+                                <div class="select-box__item">
+                                    <select class="select-box__select" id="sort">
+                                        <option value="3">S</option>
+                                        <option value="6">M</option>
+                                        <option value="9">L</option>
+                                        <option value="12">XL</option>
+                                    </select>
                                 </div>
-                            <div class="item__text box__right-item box__text">green</div>
                             </div>
                         </div>
-                        </div>
-
-                </div>
-                <!-- size -->
-                <div class="form__column">
-                    <div class="param__name"><nobr>CHOOSE size</nobr></div>
-                    <div class="param__input">
-                        <div class="filter2__select-box">
-                            <div class="select-box__item">
-                                <select class="select-box__select" id="sort">
-                                    <option value="3">S</option>
-                                    <option value="6">M</option>
-                                    <option value="9">L</option>
-                                    <option value="12">XL</option>
-                                </select>
+                    </div>
+                    <!-- quantity -->
+                    <div class="form__column">
+                        <div class="param__name">quantity</div>
+                        <div class="param__input">
+                            <div class="filter2__select-box">
+                                    <input type="number" class="select-box__select select-box__select_num" name="quantity" id="quantity" min="0" max="33" value="1">
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- quantity -->
-                <div class="form__column">
-                    <div class="param__name">quantity</div>
-                    <div class="param__input">
-                        <div class="filter2__select-box">
-                                <input type="number" class="select-box__select select-box__select_num" name="quantity" id="quantity" min="0" max="33" value="1">
-                        </div>
+                <div class="form__btn ">
+                    <button type="submit" class="single_btn" >
+                        <img class="form__cart-logo" src="./img/index/cart.svg" alt="">
+                        Add to cart
+                    </button>
+                </div>
+            </form>
+        </section>
+        <section class=" may-like container">
+            <div class="may-like__header">you may like also</div>
+            <div class="may-like__items-box">
+                <a href="#" class="may-like__link">
+                <div class="may-like__item">
+                    <img class="may-like__img" src="./img/single/ksu.png" alt="you also may like picture 1">
+                    <div class="may-like__description">
+                        <div class="may-like__name">blaze leggins</div>
+                        <div class="may-like__price">$52.00</div>
                     </div>
                 </div>
-            </div>
-            <div class="form__btn ">
-                <button type="submit" class="single_btn" >
-                    <img class="form__cart-logo" src="./img/index/cart.svg" alt="">
-                    Add to cart
-                </button>
-            </div>
-        </form>
-    </section>
-    <section class=" may-like container">
-        <div class="may-like__header">you may like also</div>
-        <div class="may-like__items-box">
-            <a href="#" class="may-like__link">
-            <div class="may-like__item">
-                <img class="may-like__img" src="./img/single/ksu.png" alt="you also may like picture 1">
-                <div class="may-like__description">
-                    <div class="may-like__name">blaze leggins</div>
-                    <div class="may-like__price">$52.00</div>
-                </div>
-            </div>
-            </a>
-            <a href="#" class="may-like__link">
-            <div class="may-like__item">
-                <img class="may-like__img" src="./img/single/alexa.png" alt="you also may like picture 1">
-                <div class="may-like__description">
-                    <div class="may-like__name">alexa sweater</div>
-                    <div class="may-like__price">$52.00</div>
-                </div>
-            </div>
-            </a>
-            <a href="#" class="may-like__link">
-            <div class="may-like__item">
-                <img class="may-like__img" src="./img/single/agness.png" alt="you also may like picture 1">
-                <div class="may-like__description">
-                    <div class="may-like__name">agnes top</div>
-                    <div class="may-like__price">$52.00</div>
-                </div>
-            </div>
-            </a>
-            <a href="#" class="may-like__link">
-            <div class="may-like__item">
-                <img class="may-like__img" src="./img/single/sylva.png" alt="you also may like picture 1">
-                <div class="may-like__description">
-                    <div class="may-like__name">sylva sweater</div>
-                    <div class="may-like__price">$52.00</div>
-                </div>
-            </div>
-            </a>
-        </div>
-    </section>
-
-    </main>
-    <!-- content end -->
-    <footer class="footer">
-        <div class="footer__top">
-            <div class="top__background">
-                <div class="top__image"><img src="./img/index/footer_img.png" alt="footer background"></div>
-                <div class="top__content">
-                    <figure class="top__comment comment">
-                        <div class="comment__box">
-                            <div class="comment__image _ibg"><img src="./img/index/face.png" alt="comment's author"></div>
-                            <figcaption class="comment__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
-                                <div class="comment__sign"><span>Bin Burhan</span><br />Dhaka, Bd</div>
-                            </figcaption>
-                        </div>
-                        <div class="top__c-pages c-page">
-                            <div class="c-page__item"></div>
-                            <div class="c-page__item c-page__item_selected "></div>
-                            <div class="c-page__item"></div>
-                        </div>
-                    </figure>
-                    <div class="top__subs subs">
-                        <div class="subs__text">
-                            <p><span>Subscribe</span><br/>FOR OUR NEWLETTER AND PROMOTION</p>
-                        </div>
-                        <form action="" class="subs__form">
-                            <input type="text" name="" id="" placeholder="Enter Your Email">
-                            <button class="btn_red" type="submit">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-        <div class="footer__mid mid">
-            <div class="footer__content">
-                <a href="./index.html" class="mid__logo logo">
-                    <img src="./img/index/logo.svg" alt="logo">
-                    <p>bran<span class="red bold">d</span></p>
                 </a>
-                <div class="mid__description">
-                    <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships. </p>
-                    <p>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+                <a href="#" class="may-like__link">
+                <div class="may-like__item">
+                    <img class="may-like__img" src="./img/single/alexa.png" alt="you also may like picture 1">
+                    <div class="may-like__description">
+                        <div class="may-like__name">alexa sweater</div>
+                        <div class="may-like__price">$52.00</div>
+                    </div>
                 </div>
-                <nav class="mid__nav">
-                    <div class="mid__menu">
-                        <div class="mid__title">COMPANY</div>
-                        <ul class="mid__list">
-                            <li class="mid__link link"><a href="#">Home</a></li>
-                            <li class="mid__link link"><a href="#">Shop</a></li>
-                            <li class="mid__link link"><a href="#">About</a></li>
-                            <li class="mid__link link"><a href="#">How It Works</a></li>
-                            <li class="mid__link link"><a href="#">Contact</a></li>
-                        </ul>
+                </a>
+                <a href="#" class="may-like__link">
+                <div class="may-like__item">
+                    <img class="may-like__img" src="./img/single/agness.png" alt="you also may like picture 1">
+                    <div class="may-like__description">
+                        <div class="may-like__name">agnes top</div>
+                        <div class="may-like__price">$52.00</div>
                     </div>
-                    <div class="mid__menu">
-                        <div class="mid__title">INFORMATION</div>
-                        <ul class="mid__list">
-                            <li class="mid__link link"><a href="#">Tearms & Condition</a></li>
-                            <li class="mid__link link"><a href="#">Privacy Policy</a></li>
-                            <li class="mid__link link"><a href="#">How to Buy</a></li>
-                            <li class="mid__link link"><a href="#">How to Sell</a></li>
-                            <li class="mid__link link"><a href="#">Promotion</a></li>
-                        </ul>
+                </div>
+                </a>
+                <a href="#" class="may-like__link">
+                <div class="may-like__item">
+                    <img class="may-like__img" src="./img/single/sylva.png" alt="you also may like picture 1">
+                    <div class="may-like__description">
+                        <div class="may-like__name">sylva sweater</div>
+                        <div class="may-like__price">$52.00</div>
                     </div>
-                    <div class="mid__menu">
-                        <div class="mid__title">SHOP CATEGORY</div>
-                        <ul class="mid__list">
-                            <li class="mid__link link"><a href="#">Men</a></li>
-                            <li class="mid__link link"><a href="#">Women</a></li>
-                            <li class="mid__link link"><a href="#">Child</a></li>
-                            <li class="mid__link link"><a href="#">Apparel</a></li>
-                            <li class="mid__link link"><a href="#">Brows All</a></li>
-                        </ul>
-                    </div>
-                </nav>
+                </div>
+                </a>
             </div>
-        </div>
-        <div class="footer__bottom bottom">
-            <div class="bottom__content">
-                <div class="bottom__rights">© 2017  Brand  All Rights Reserved.</div>
-                <div class="bottom__social">
-                    <button class="btn_red-social"><i class="fa-brands fa-facebook-f"></i></button>
-                    <button class="btn_red-social"><i class="fa-brands fa-twitter"></i></button>
-                    <button class="btn_red-social"><i class="fa-brands fa-linkedin-in"></i></button>
-                    <button class="btn_red-social"><i class="fa-brands fa-pinterest-p"></i></button>
-                    <button class="btn_red-social"><i class="fa-brands fa-google-plus-g"></i></button>
+        </section>
+    
+        </main>
+        <!-- content end -->
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="top__background">
+                    <div class="top__image"><img src="./img/index/footer_img.png" alt="footer background"></div>
+                    <div class="top__content">
+                        <figure class="top__comment comment">
+                            <div class="comment__box">
+                                <div class="comment__image _ibg"><img src="./img/index/face.png" alt="comment's author"></div>
+                                <figcaption class="comment__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+                                    <div class="comment__sign"><span>Bin Burhan</span><br />Dhaka, Bd</div>
+                                </figcaption>
+                            </div>
+                            <div class="top__c-pages c-page">
+                                <div class="c-page__item"></div>
+                                <div class="c-page__item c-page__item_selected "></div>
+                                <div class="c-page__item"></div>
+                            </div>
+                        </figure>
+                        <div class="top__subs subs">
+                            <div class="subs__text">
+                                <p><span>Subscribe</span><br/>FOR OUR NEWLETTER AND PROMOTION</p>
+                            </div>
+                            <form action="" class="subs__form">
+                                <input type="text" name="" id="" placeholder="Enter Your Email">
+                                <button class="btn_red" type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+    
+                </div>
+    
+            </div>
+            <div class="footer__mid mid">
+                <div class="footer__content">
+                    <a href="./index.html" class="mid__logo logo">
+                        <img src="./img/index/logo.svg" alt="logo">
+                        <p>bran<span class="red bold">d</span></p>
+                    </a>
+                    <div class="mid__description">
+                        <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships. </p>
+                        <p>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+                    </div>
+                    <nav class="mid__nav">
+                        <div class="mid__menu">
+                            <div class="mid__title">COMPANY</div>
+                            <ul class="mid__list">
+                                <li class="mid__link link"><a href="#">Home</a></li>
+                                <li class="mid__link link"><a href="#">Shop</a></li>
+                                <li class="mid__link link"><a href="#">About</a></li>
+                                <li class="mid__link link"><a href="#">How It Works</a></li>
+                                <li class="mid__link link"><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="mid__menu">
+                            <div class="mid__title">INFORMATION</div>
+                            <ul class="mid__list">
+                                <li class="mid__link link"><a href="#">Tearms & Condition</a></li>
+                                <li class="mid__link link"><a href="#">Privacy Policy</a></li>
+                                <li class="mid__link link"><a href="#">How to Buy</a></li>
+                                <li class="mid__link link"><a href="#">How to Sell</a></li>
+                                <li class="mid__link link"><a href="#">Promotion</a></li>
+                            </ul>
+                        </div>
+                        <div class="mid__menu">
+                            <div class="mid__title">SHOP CATEGORY</div>
+                            <ul class="mid__list">
+                                <li class="mid__link link"><a href="#">Men</a></li>
+                                <li class="mid__link link"><a href="#">Women</a></li>
+                                <li class="mid__link link"><a href="#">Child</a></li>
+                                <li class="mid__link link"><a href="#">Apparel</a></li>
+                                <li class="mid__link link"><a href="#">Brows All</a></li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
-        </div>
-    </footer>
+            <div class="footer__bottom bottom">
+                <div class="bottom__content">
+                    <div class="bottom__rights">© 2017  Brand  All Rights Reserved.</div>
+                    <div class="bottom__social">
+                        <button class="btn_red-social"><i class="fa-brands fa-facebook-f"></i></button>
+                        <button class="btn_red-social"><i class="fa-brands fa-twitter"></i></button>
+                        <button class="btn_red-social"><i class="fa-brands fa-linkedin-in"></i></button>
+                        <button class="btn_red-social"><i class="fa-brands fa-pinterest-p"></i></button>
+                        <button class="btn_red-social"><i class="fa-brands fa-google-plus-g"></i></button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</div>
 
 </body>
 
