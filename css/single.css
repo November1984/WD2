@@ -229,9 +229,13 @@
   font-size: 27px;
   letter-spacing: 1px;
   font-family: "Lato-B";
-  color: #4d4d4d;
+  color: #ef5b70;
   font-size: 16px;
   line-height: 55px;
+}
+
+.single_btn:hover {
+  background-color: #fff;
 }
 
 .single_btn img {

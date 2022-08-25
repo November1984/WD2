@@ -208,10 +208,13 @@
 .single_btn {
   width: 538px;
   height: 55px;
-  @include Lato-B(#4d4d4d);
+  @include Lato-B(#ef5b70);
   font-size: 16px;
   line-height: 55px;
 
+}
+.single_btn:hover {
+  background-color: #fff ;
 }
 .single_btn img {
     max-height: 27px;
@@ -445,3 +448,5 @@
   margin-right: 0;
 }
 /*# sourceMappingURL=single.css.map */
+
+
