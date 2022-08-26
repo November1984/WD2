@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/c55d017e1e.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/co_style.css">
+    <link rel="stylesheet" href="css/single.css">
+
+    <title>Single page</title>
+
+</head>
+
+<body>
+<div class="wrapper">
+    
+    
+    <header class="header">
+        <div class="header__top">
+            <a href="./index.html" class="header__logo logo">
+                <img src="./img/index/logo.svg" alt="logo">
+                <p>bran<span class="red bold">d</span></p>
+            </a>
+            <div class="header__center">
+                <details class="header__browse browse">
+                    <summary>Browse</summary>
+                        <nav class="browse__menu menu">
+                            <h4 class="menu__header">women</h4>
+                                <a class="link" href="#"><div class="menu__link">Dresses</div></a>
+                                <a class="link" href="#"><div class="menu__link">Tops</div></a>
+                                <a class="link" href="#"><div class="menu__link">Sweaters/Knits</div></a>
+                                <a class="link" href="#"><div class="menu__link">Jackets/Coats</div></a>
+                                <a class="link" href="#"><div class="menu__link">Blazers</div></a>
+                                <a class="link" href="#"><div class="menu__link">Denim</div></a>
+                                <a class="link" href="#"><div class="menu__link">Leggings/Pants</div></a>
+                                <a class="link" href="#"><div class="menu__link">Skirts/Shorts</div></a>
+                                <a class="link" href="#"><div class="menu__link">Accessories</div></a>
+                            <h4 class="menu__header">men</h4>
+                                <a href="#" class="link"><div class="menu__link">Tees/Tank tops</div></a>
+                                <a href="#" class="link"><div class="menu__link">Shirts/Polos</div></a>
+                                <a href="#" class="link"><div class="menu__link">Sweaters</div></a>
+                                <a href="#" class="link"><div class="menu__link">Sweatshirts/Hoodies</div></a>
+                                <a href="#" class="link"><div class="menu__link">Blazers</div></a>
+                                <a href="#" class="link"><div class="menu__link">Jackets/vests</div></a>
+                        </nav>
+                </details>
+                <form action="#" method="get" class="header__form">
+                    <input type="text" name="search" id="search" placeholder="Search for Item...">
+                    <button type="submit" class="header__search-btn"><i class="fas fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+            <div class="header__right">
+                <div class="header__cart"><img class="header__cart-logo" src="./img/index/cart.svg" alt="">
+                    <div class="header__cart-menu cart-menu menu">
+                        <nav class="cart-menu__box">
+                            <div class="cart-menu__items">
+                                <div class="cart-menu__item">
+                                    <a href="./single.html" class="cart-menu__link">
+                                        <div class="cart-menu__left _ibg">
+                                            <img src="./img/index/cart_1.png" alt="Rebox zane">
+                                        </div>
+                                        <div class="cart-menu__mid">
+                                            <p>Rebox Zane</p>
+                                            <div class="cart-menu__rate">
+                                                <span class="active"></span>	
+                                                <span class="active"></span>    
+                                                <span class="active"></span>  
+                                                <span></span>    
+                                                <span></span>
+                                            </div>
+                                            <div class="cart-menu__price">1  x   $250</div>
+                                        </div>
+                                    </a>
+                                    <div class="cart-menu__right">
+                                        <img src="./img/index/cross.png" alt="delete from cart">
+                                    </div>
+                                </div>
+                                <div class="cart-menu__item">
+                                    <a href="./single.html" class="cart-menu__link">
+                                        <div class="cart-menu__left _ibg">
+                                            <img src="./img/index/cart_2.png" alt="Rebox zane">
+                                        </div>
+                                        <div class="cart-menu__mid">
+                                            <p>Rebox Zane</p>
+                                            <div class="cart-menu__rate">
+                                                <span class="active"></span>	
+                                                <span class="active"></span>    
+                                                <span class="active"></span>  
+                                                <span></span>    
+                                                <span></span>
+                                            </div>
+                                            <div class="cart-menu__price">1  x   $250</div>
+                                        </div>
+                                    </a>
+                                        <div class="cart-menu__right">
+                                            <img src="./img/index/cross.png" alt="delete from cart">
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="cart-menu__sum">
+                                <div class="sum__text">TOTAL</div>
+                                <div class="sum__val">$500.00</div>
+                            </div>
+                            <div class="cart-menu__btns">
+                                <a href="./checkout.html" class="carted__btn-links"><div class="btns__item btn_red-cart">Checkout</div></a>
+                                <a href="./cart.html" class="carted__btn-links"><div class="btns__item btn_red-cart">go to cart</div></a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="header__btns">
+                    <a href="#" class=""><div class="header__account header__account_l btn_red list_dwn">My Account</div></a>
+                    <a href="#" class="">
+                        <div class="header__account header__account_s btn_red list_dwn">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="header__nav nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link link">home</a>
+                    <div class="nav__mega-menu menu">
+                        <div class="mm__box">
+                            <div class="mm__item">
+                                <h4 class="menu__header">women</h4>
+                                <a class="link" href="#"><div class="menu__link">Dresses</div></a>
+                                <a class="link" href="#"><div class="menu__link">Tops</div></a>
+                                <a class="link" href="#"><div class="menu__link">Sweaters/Knits</div></a>
+                                <a class="link" href="#"><div class="menu__link">Jackets/Coats</div></a>
+                                <a class="link" href="#"><div class="menu__link">Blazers</div></a>
+                                <a class="link" href="#"><div class="menu__link">Denim</div></a>
+                                <a class="link" href="#"><div class="menu__link">Leggings/Pants</div></a>
+                                <a class="link" href="#"><div class="menu__link">Skirts/Shorts</div></a>
+                                <a class="link" href="#"><div class="menu__link">Accessories</div></a>
+                            </div>
+                            <div class="mm__item">
+                                <h4 class="menu__header">women</h4>
+                                <a class="link" href="#"><div class="menu__link">Dresses</div></a>
+                                <a class="link" href="#"><div class="menu__link">Tops</div></a>
+                                <a class="link" href="#"><div class="menu__link">Sweaters/Knits</div></a>
+                                <a class="link" href="#"><div class="menu__link">Jackets/Coats</div></a>
+                                <h4 class="menu__header">women</h4>
+                                <a class="link" href="#"><div class="menu__link">Leggings/Pants</div></a>
+                                <a class="link" href="#"><div class="menu__link">Skirts/Shorts</div></a>
+                                <a class="link" href="#"><div class="menu__link">Accessories</div></a>
+                            </div>
+                            <div class="mm__item">
+                                <h4 class="menu__header">women</h4>
+                                <a class="link" href="#"><div class="menu__link">Dresses</div></a>
+                                <a class="link" href="#"><div class="menu__link">Tops</div></a>
+                                <a class="link" href="#"><div class="menu__link">Sweaters/Knits</div></a>
+                                <a class="link" href="#"><div class="menu__link">Jackets/Coats</div></a>
+                                <!-- <div class="mm__img_box"> -->
+                                    <div class="mm__img _ibg">
+                                        <img src="./img/index/mm_img.png" alt="">
+                                        <p>super sale!</p>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav__item"><a href="#" class="nav__link link">man</a>
+                    <div class="nav__mega-menu menu">
+                        <div class="mm__box">
+                            <div class="mm__item">
+                                <h4 class="menu__header">women</h4>
+                                <a class="link" href="#"><div class="menu__link">Dresses</div></a>
+                                <a class="link" href="#"><div class="menu__link">Tops</div></a>
+                                <a class="link" href="#"><div class="menu__link">Sweaters/Knits</div></a>
+                                <a class="link" href="#"><div class="menu__link">Jackets/Coats</div></a>
+                                <a class="link" href="#"><div class="menu__link">Blazers</div></a>
+                                <a class="link" href="#"><div class="menu__link">Denim</div></a>
+                                <a class="link" href="#"><div class="menu__link">Leggings/Pants</div></a>
+                                <a class="link" href="#"><div class="menu__link">Skirts/Shorts</div></a>
+                                <a class="link" href="#"><div class="menu__link">Accessories</div></a>
+                                <a class="link" href="#"><div class="menu__link">Bags/Purses</div></a>
+                                <a class="link" href="#"><div class="menu__link">Swimwear/Underwear</div></a>
+                                <a class="link" href="#"><div class="menu__link">Nightwear</div></a>
+                                <a class="link" href="#"><div class="menu__link">Shoes</div></a>
+                                <a class="link" href="#"><div class="menu__link">Beauty</div></a>
+                            </div>
+                            <div class="mm__item">
+                                <h4 class="menu__header">women</h4>
+                                <a class="link" href="#"><div class="menu__link">Dresses</div></a>
+                                <a class="link" href="#"><div class="menu__link">Tops</div></a>
+                                <a class="link" href="#"><div class="menu__link">Sweaters/Knits</div></a>
+                                <a class="link" href="#"><div class="menu__link">Jackets/Coats</div></a>
+                                <a class="link" href="#"><div class="menu__link">Blazers</div></a>
+                                <h4 class="menu__header">women</h4>
+                                <a class="link" href="#"><div class="menu__link">Leggings/Pants</div></a>
+                                <a class="link" href="#"><div class="menu__link">Skirts/Shorts</div></a>
+                                <a class="link" href="#"><div class="menu__link">Accessories</div></a>
+                                <a class="link" href="#"><div class="menu__link">Bags/Purses</div></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav__item"><a href="#" class="nav__link link">women</a>
+                    <div class="nav__mega-menu menu">
+                        <div class="mm__box">
+                            <div class="mm__item">
+                                <h4 class="menu__header">women</h4>
+                                <a class="link" href="#"><div class="menu__link">Dresses</div></a>
+                                <a class="link" href="#"><div class="menu__link">Tops</div></a>
+                                <a class="link" href="#"><div class="menu__link">Sweaters/Knits</div></a>
+                                <a class="link" href="#"><div class="menu__link">Jackets/Coats</div></a>
+                                <a class="link" href="#"><div class="menu__link">Blazers</div></a>
+                                <a class="link" href="#"><div class="menu__link">Denim</div></a>
+                                <a class="link" href="#"><div class="menu__link">Leggings/Pants</div></a>
+                                <a class="link" href="#"><div class="menu__link">Skirts/Shorts</div></a>
+                                <a class="link" href="#"><div class="menu__link">Accessories</div></a>
+                                <a class="link" href="#"><div class="menu__link">Bags/Purses</div></a>
+                                <a class="link" href="#"><div class="menu__link">Swimwear/Underwear</div></a>
+                                <a class="link" href="#"><div class="menu__link">Nightwear</div></a>
+                                <a class="link" href="#"><div class="menu__link">Shoes</div></a>
+                                <a class="link" href="#"><div class="menu__link">Beauty</div></a>
+                            </div>
+                            <div class="mm__item">
+                                <h4 class="menu__header">women</h4>
+                                <a class="link" href="#"><div class="menu__link">Dresses</div></a>
+                                <a class="link" href="#"><div class="menu__link">Tops</div></a>
+                                <a class="link" href="#"><div class="menu__link">Sweaters/Knits</div></a>
+                                <a class="link" href="#"><div class="menu__link">Jackets/Coats</div></a>
+                                <a class="link" href="#"><div class="menu__link">Blazers</div></a>
+                                <h4 class="menu__header">women</h4>
+                                <a class="link" href="#"><div class="menu__link">Leggings/Pants</div></a>
+                                <a class="link" href="#"><div class="menu__link">Skirts/Shorts</div></a>
+                                <a class="link" href="#"><div class="menu__link">Accessories</div></a>
+                                <a class="link" href="#"><div class="menu__link">Bags/Purses</div></a>
+
+                            </div>
+                            <div class="mm__item">
+                                <h4 class="menu__header">women</h4>
+                                <a class="link" href="#"><div class="menu__link">Dresses</div></a>
+                                <a class="link" href="#"><div class="menu__link">Tops</div></a>
+                                <a class="link" href="#"><div class="menu__link">Sweaters/Knits</div></a>
+                                <a class="link" href="#"><div class="menu__link">Jackets/Coats</div></a>
+                                <a class="link" href="#"><div class="menu__link">Blazers</div></a>
+                                <a class="link" href="#"><div class="menu__link">Denim</div></a>
+                                <a class="link" href="#"><div class="menu__link">Leggings/Pants</div></a>
+                                <!-- <div class="mm__img_box"> -->
+                                    <div class="mm__img _ibg">
+                                        <img src="./img/index/mm_img.png" alt="">
+                                        <p>super sale!</p>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav__item"><a href="#" class="nav__link link">kids</a>
+                    <div class="nav__mega-menu menu">
+                        <div class="mm__box">
+                            <div class="mm__item">
+                                <h4 class="menu__header">women</h4>
+                                <a class="link" href="#"><div class="menu__link">Dresses</div></a>
+                                <a class="link" href="#"><div class="menu__link">Tops</div></a>
+                                <a class="link" href="#"><div class="menu__link">Sweaters/Knits</div></a>
+                                <a class="link" href="#"><div class="menu__link">Jackets/Coats</div></a>
+                                <a class="link" href="#"><div class="menu__link">Blazers</div></a>
+                                <a class="link" href="#"><div class="menu__link">Denim</div></a>
+                                <a class="link" href="#"><div class="menu__link">Leggings/Pants</div></a>
+                                <a class="link" href="#"><div class="menu__link">Skirts/Shorts</div></a>
+                                <a class="link" href="#"><div class="menu__link">Accessories</div></a>
+                                <a class="link" href="#"><div class="menu__link">Bags/Purses</div></a>
+                                <a class="link" href="#"><div class="menu__link">Swimwear/Underwear</div></a>
+                                <a class="link" href="#"><div class="menu__link">Nightwear</div></a>
+                                <a class="link" href="#"><div class="menu__link">Shoes</div></a>
+                                <a class="link" href="#"><div class="menu__link">Beauty</div></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav__item"><a href="#" class="nav__link link">acceseries</a>
+                    <div class="nav__mega-menu menu mm__center">
+                        <div class="mm__box">
+                            <div class="mm__item">
+                                <h4 class="menu__header">women</h4>
+                                <a class="link" href="#"><div class="menu__link">Dresses</div></a>
+                                <a class="link" href="#"><div class="menu__link">Tops</div></a>
+                                <a class="link" href="#"><div class="menu__link">Sweaters/Knits</div></a>
+                                <a class="link" href="#"><div class="menu__link">Jackets/Coats</div></a>
+                                <a class="link" href="#"><div class="menu__link">Blazers</div></a>
+                                <a class="link" href="#"><div class="menu__link">Denim</div></a>
+                                <a class="link" href="#"><div class="menu__link">Leggings/Pants</div></a>
+                                <a class="link" href="#"><div class="menu__link">Skirts/Shorts</div></a>
+                                <a class="link" href="#"><div class="menu__link">Accessories</div></a>
+                                <a class="link" href="#"><div class="menu__link">Bags/Purses</div></a>
+                                <a class="link" href="#"><div class="menu__link">Swimwear/Underwear</div></a>
+                                <a class="link" href="#"><div class="menu__link">Nightwear</div></a>
+                                <a class="link" href="#"><div class="menu__link">Shoes</div></a>
+                                <a class="link" href="#"><div class="menu__link">Beauty</div></a>
+                            </div>
+                            <div class="mm__item">
+                                <h4 class="menu__header">women</h4>
+                                <a class="link" href="#"><div class="menu__link">Dresses</div></a>
+                                <a class="link" href="#"><div class="menu__link">Tops</div></a>
+                                <a class="link" href="#"><div class="menu__link">Sweaters/Knits</div></a>
+                                <a class="link" href="#"><div class="menu__link">Jackets/Coats</div></a>
+                                <a class="link" href="#"><div class="menu__link">Blazers</div></a>
+                                <h4 class="menu__header">women</h4>
+                                <a class="link" href="#"><div class="menu__link">Leggings/Pants</div></a>
+                                <a class="link" href="#"><div class="menu__link">Skirts/Shorts</div></a>
+                                <a class="link" href="#"><div class="menu__link">Accessories</div></a>
+                                <a class="link" href="#"><div class="menu__link">Bags/Purses</div></a>
+
+                            </div>
+                            <div class="mm__item">
+                                <h4 class="menu__header">women</h4>
+                                <a class="link" href="#"><div class="menu__link">Dresses</div></a>
+                                <a class="link" href="#"><div class="menu__link">Tops</div></a>
+                                <a class="link" href="#"><div class="menu__link">Sweaters/Knits</div></a>
+                                <a class="link" href="#"><div class="menu__link">Jackets/Coats</div></a>
+                                <a class="link" href="#"><div class="menu__link">Blazers</div></a>
+                                <a class="link" href="#"><div class="menu__link">Denim</div></a>
+                                <a class="link" href="#"><div class="menu__link">Leggings/Pants</div></a>
+                                <!-- <div class="mm__img_box"> -->
+                                    <div class="mm__img _ibg">
+                                        <img src="./img/index/mm_img.png" alt="">
+                                        <p>super sale!</p>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav__item"><a href="#" class="nav__link link">featured</a>
+                    <div class="nav__mega-menu menu mm__center">
+                        <div class="mm__box">
+                            <div class="mm__item">
+                                <h4 class="menu__header">women</h4>
+                                <a class="link" href="#"><div class="menu__link">Dresses</div></a>
+                                <a class="link" href="#"><div class="menu__link">Tops</div></a>
+                                <a class="link" href="#"><div class="menu__link">Sweaters/Knits</div></a>
+                                <a class="link" href="#"><div class="menu__link">Jackets/Coats</div></a>
+                                <a class="link" href="#"><div class="menu__link">Blazers</div></a>
+                                <a class="link" href="#"><div class="menu__link">Denim</div></a>
+                                <a class="link" href="#"><div class="menu__link">Leggings/Pants</div></a>
+                                <a class="link" href="#"><div class="menu__link">Skirts/Shorts</div></a>
+                                <a class="link" href="#"><div class="menu__link">Accessories</div></a>
+                                <a class="link" href="#"><div class="menu__link">Bags/Purses</div></a>
+                                <a class="link" href="#"><div class="menu__link">Swimwear/Underwear</div></a>
+                                <a class="link" href="#"><div class="menu__link">Nightwear</div></a>
+                                <a class="link" href="#"><div class="menu__link">Shoes</div></a>
+                                <a class="link" href="#"><div class="menu__link">Beauty</div></a>
+                            </div>
+                            <div class="mm__item">
+                                <h4 class="menu__header">women</h4>
+                                <a class="link" href="#"><div class="menu__link">Dresses</div></a>
+                                <a class="link" href="#"><div class="menu__link">Tops</div></a>
+                                <a class="link" href="#"><div class="menu__link">Sweaters/Knits</div></a>
+                                <a class="link" href="#"><div class="menu__link">Jackets/Coats</div></a>
+                                <a class="link" href="#"><div class="menu__link">Blazers</div></a>
+                                <h4 class="menu__header">women</h4>
+                                <a class="link" href="#"><div class="menu__link">Leggings/Pants</div></a>
+                                <a class="link" href="#"><div class="menu__link">Skirts/Shorts</div></a>
+                                <a class="link" href="#"><div class="menu__link">Accessories</div></a>
+                                <a class="link" href="#"><div class="menu__link">Bags/Purses</div></a>
+
+                            </div>
+                            <div class="mm__item">
+                                <h4 class="menu__header">women</h4>
+                                <a class="link" href="#"><div class="menu__link">Dresses</div></a>
+                                <a class="link" href="#"><div class="menu__link">Tops</div></a>
+                                <a class="link" href="#"><div class="menu__link">Sweaters/Knits</div></a>
+                                <a class="link" href="#"><div class="menu__link">Jackets/Coats</div></a>
+                                <a class="link" href="#"><div class="menu__link">Blazers</div></a>
+                                <a class="link" href="#"><div class="menu__link">Denim</div></a>
+                                <a class="link" href="#"><div class="menu__link">Leggings/Pants</div></a>
+                                <!-- <div class="mm__img_box"> -->
+                                    <div class="mm__img _ibg">
+                                        <img src="./img/index/mm_img.png" alt="">
+                                        <p>super sale!</p>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav__item"><a href="#" class="nav__link link">hot deals</a>
+                    <div class="nav__mega-menu menu mm__right">
+                        <div class="mm__box">
+                            <div class="mm__item">
+                                <h4 class="menu__header">women</h4>
+                                <a class="link" href="#"><div class="menu__link">Dresses</div></a>
+                                <a class="link" href="#"><div class="menu__link">Tops</div></a>
+                                <a class="link" href="#"><div class="menu__link">Sweaters/Knits</div></a>
+                                <a class="link" href="#"><div class="menu__link">Jackets/Coats</div></a>
+                                <a class="link" href="#"><div class="menu__link">Blazers</div></a>
+                                <a class="link" href="#"><div class="menu__link">Denim</div></a>
+                                <a class="link" href="#"><div class="menu__link">Leggings/Pants</div></a>
+                                <a class="link" href="#"><div class="menu__link">Skirts/Shorts</div></a>
+                                <a class="link" href="#"><div class="menu__link">Accessories</div></a>
+                                <a class="link" href="#"><div class="menu__link">Bags/Purses</div></a>
+                                <a class="link" href="#"><div class="menu__link">Swimwear/Underwear</div></a>
+                                <a class="link" href="#"><div class="menu__link">Nightwear</div></a>
+                                <a class="link" href="#"><div class="menu__link">Shoes</div></a>
+                                <a class="link" href="#"><div class="menu__link">Beauty</div></a>
+                            </div>
+                            <div class="mm__item">
+                                <h4 class="menu__header">women</h4>
+                                <a class="link" href="#"><div class="menu__link">Dresses</div></a>
+                                <a class="link" href="#"><div class="menu__link">Tops</div></a>
+                                <a class="link" href="#"><div class="menu__link">Sweaters/Knits</div></a>
+                                <a class="link" href="#"><div class="menu__link">Jackets/Coats</div></a>
+                                <a class="link" href="#"><div class="menu__link">Blazers</div></a>
+                                <h4 class="menu__header">women</h4>
+                                <a class="link" href="#"><div class="menu__link">Leggings/Pants</div></a>
+                                <a class="link" href="#"><div class="menu__link">Skirts/Shorts</div></a>
+                                <a class="link" href="#"><div class="menu__link">Accessories</div></a>
+                                <a class="link" href="#"><div class="menu__link">Bags/Purses</div></a>
+
+                            </div>
+                            <div class="mm__item">
+                                <h4 class="menu__header">women</h4>
+                                <a class="link" href="#"><div class="menu__link">Dresses</div></a>
+                                <a class="link" href="#"><div class="menu__link">Tops</div></a>
+                                <a class="link" href="#"><div class="menu__link">Sweaters/Knits</div></a>
+                                <a class="link" href="#"><div class="menu__link">Jackets/Coats</div></a>
+                                <a class="link" href="#"><div class="menu__link">Blazers</div></a>
+                                <a class="link" href="#"><div class="menu__link">Denim</div></a>
+                                <a class="link" href="#"><div class="menu__link">Leggings/Pants</div></a>
+                                <!-- <div class="mm__img_box"> -->
+                                    <div class="mm__img _ibg">
+                                        <img src="./img/index/mm_img.png" alt="">
+                                        <p>super sale!</p>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+        <!-- header end -->
+        <main class="main">
+        <section class="slider co_slider">
+            <div class="container co_slider_content">
+                <p class="co_slider_text">new arrivals</p>
+                <p class="bread_crumps"><a href="./index.html">Home</a> / <a href="#">Men</a> / <a href="#">New Arrivals</a> </p>
+            </div>
+        </section>
+        <section class="smain__banner">
+            <div class="conteiner">
+                <div class="_ibg box">
+                    <img src="./img/single/kate.png" alt="card image" class="main__img">
+                </div>
+            </div>
+            <div class="slide-btns">
+                <div class="slide-btn"><</div>
+                <div class="slide-btn">></div>
+            </div>
+        </section>
+        <section class=" container main-desc main-desc-box">
+            <div class="desc__box">
+                <div class="desc__devider">women collection</div>
+                <div class="desc__header">Moschino Cheap And Chic</div>
+                <div class="desc__caption">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</div>
+                <div class="desc__data">
+                    <div class="data__item data__item_material">MATERIAL: <span>COTTON</span></div>
+                    <div class="data__item data__item_designer">DESIGNER: <span>BINBURHAN</span></div>
+                </div>
+                <div class="desc__price">$561</div>
+            </div>
+            <form action="" class="desc__form">
+                <div class="form__param">
+                    <!-- color -->
+                    <div class="form__column">
+                        <div class="param__name"><nobr>CHOOSE COLOR</nobr></div>
+                        <div class="box-color">
+                            <div class="edit-box">
+                                <div class="box__left">
+                                <div class="box__color box__color_grey"></div>
+                                </div>
+                                <div class="box__right">
+                                <div class="box__text item-text" >grey</div>
+                                </div>
+                            </div>
+                            <div class="edit-menu">
+                                <div class="menu__item">
+                                <div class="box__left">
+                                    <div class="box__color box__color_grey"></div>
+                                    </div>
+                                <div class="item__text box__right-item box__text">grey</div>
+                                </div>
+                                <div class="menu__item">
+                                <div class="box__left">
+                                    <div class="box__color box__color_red"></div>
+                                    </div>
+                                <div class="item__text box__right-item box__text">red</div>
+                                </div>
+                                <div class="menu__item">
+                                <div class="box__left">
+                                    <div class="box__color box__color_yellow"></div>
+                                    </div>
+                                <div class="item__text box__right-item box__text">yellow</div>
+                                </div>
+                                <div class="menu__item">
+                                <div class="box__left">
+                                    <div class="box__color box__color_blue"></div>
+                                    </div>
+                                <div class="item__text box__right-item box__text">blue</div>
+                                </div>
+                                <div class="menu__item">
+                                <div class="box__left">
+                                    <div class="box__color box__color_green"></div>
+                                    </div>
+                                <div class="item__text box__right-item box__text">green</div>
+                                </div>
+                            </div>
+                            </div>
+    
+                    </div>
+                    <!-- size -->
+                    <div class="form__column">
+                        <div class="param__name"><nobr>CHOOSE size</nobr></div>
+                        <div class="param__input">
+                            <div class="filter2__select-box edit-box">
+                                <div class="select-box__item">
+                                    <select class="select-box__select" id="sort">
+                                        <option value="3">S</option>
+                                        <option value="6">M</option>
+                                        <option value="9">L</option>
+                                        <option value="12">XL</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- quantity -->
+                    <div class="form__column">
+                        <div class="param__name">quantity</div>
+                        <div class="param__input">
+                            <div class="filter2__select-box edit-box">
+                                    <input type="number" class="select-box__select select-box__select_num" name="quantity" id="quantity" min="0" max="33" value="1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__btn ">
+                    <button type="submit" class="single_btn btn_red-cart" >
+                        Add to cart
+                    </button>
+                </div>
+            </form>
+        </section>
+        <section class=" may-like container">
+            <div class="may-like__header">you may like also</div>
+            <div class="may-like__items-box">
+                <a href="#" class="may-like__link">
+                <div class="may-like__item">
+                    <img class="may-like__img" src="./img/single/ksu.png" alt="you also may like picture 1">
+                    <div class="may-like__description">
+                        <div class="may-like__name">blaze leggins</div>
+                        <div class="may-like__price">$52.00</div>
+                    </div>
+                </div>
+                </a>
+                <a href="#" class="may-like__link">
+                <div class="may-like__item">
+                    <img class="may-like__img" src="./img/single/alexa.png" alt="you also may like picture 1">
+                    <div class="may-like__description">
+                        <div class="may-like__name">alexa sweater</div>
+                        <div class="may-like__price">$52.00</div>
+                    </div>
+                </div>
+                </a>
+                <a href="#" class="may-like__link">
+                <div class="may-like__item">
+                    <img class="may-like__img" src="./img/single/agness.png" alt="you also may like picture 1">
+                    <div class="may-like__description">
+                        <div class="may-like__name">agnes top</div>
+                        <div class="may-like__price">$52.00</div>
+                    </div>
+                </div>
+                </a>
+                <a href="#" class="may-like__link">
+                <div class="may-like__item">
+                    <img class="may-like__img" src="./img/single/sylva.png" alt="you also may like picture 1">
+                    <div class="may-like__description">
+                        <div class="may-like__name">sylva sweater</div>
+                        <div class="may-like__price">$52.00</div>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </section>
+    
+        </main>
+        <!-- content end -->
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="top__background">
+                    <div class="top__image"><img src="./img/index/footer_img.png" alt="footer background"></div>
+                    <div class="top__content">
+                        <figure class="top__comment comment">
+                            <div class="comment__box">
+                                <div class="comment__image _ibg"><img src="./img/index/face.png" alt="comment's author"></div>
+                                <figcaption class="comment__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+                                    <div class="comment__sign"><span>Bin Burhan</span><br />Dhaka, Bd</div>
+                                </figcaption>
+                            </div>
+                            <div class="top__c-pages c-page">
+                                <div class="c-page__item"></div>
+                                <div class="c-page__item c-page__item_selected "></div>
+                                <div class="c-page__item"></div>
+                            </div>
+                        </figure>
+                        <div class="top__subs subs">
+                            <div class="subs__text">
+                                <p><span>Subscribe</span><br/>FOR OUR NEWLETTER AND PROMOTION</p>
+                            </div>
+                            <form action="" class="subs__form">
+                                <input type="text" name="" id="" placeholder="Enter Your Email">
+                                <button class="btn_red" type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+    
+                </div>
+    
+            </div>
+            <div class="footer__mid mid">
+                <div class="footer__content">
+                    <a href="./index.html" class="mid__logo logo">
+                        <img src="./img/index/logo.svg" alt="logo">
+                        <p>bran<span class="red bold">d</span></p>
+                    </a>
+                    <div class="mid__description">
+                        <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships. </p>
+                        <p>Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+                    </div>
+                    <nav class="mid__nav">
+                        <div class="mid__menu">
+                            <div class="mid__title">COMPANY</div>
+                            <ul class="mid__list">
+                                <li class="mid__link link"><a href="#">Home</a></li>
+                                <li class="mid__link link"><a href="#">Shop</a></li>
+                                <li class="mid__link link"><a href="#">About</a></li>
+                                <li class="mid__link link"><a href="#">How It Works</a></li>
+                                <li class="mid__link link"><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="mid__menu">
+                            <div class="mid__title">INFORMATION</div>
+                            <ul class="mid__list">
+                                <li class="mid__link link"><a href="#">Tearms & Condition</a></li>
+                                <li class="mid__link link"><a href="#">Privacy Policy</a></li>
+                                <li class="mid__link link"><a href="#">How to Buy</a></li>
+                                <li class="mid__link link"><a href="#">How to Sell</a></li>
+                                <li class="mid__link link"><a href="#">Promotion</a></li>
+                            </ul>
+                        </div>
+                        <div class="mid__menu">
+                            <div class="mid__title">SHOP CATEGORY</div>
+                            <ul class="mid__list">
+                                <li class="mid__link link"><a href="#">Men</a></li>
+                                <li class="mid__link link"><a href="#">Women</a></li>
+                                <li class="mid__link link"><a href="#">Child</a></li>
+                                <li class="mid__link link"><a href="#">Apparel</a></li>
+                                <li class="mid__link link"><a href="#">Brows All</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__bottom bottom">
+                <div class="bottom__content">
+                    <div class="bottom__rights">© 2017  Brand  All Rights Reserved.</div>
+                    <div class="bottom__social">
+                        <button class="btn_red-social"><i class="fa-brands fa-facebook-f"></i></button>
+                        <button class="btn_red-social"><i class="fa-brands fa-twitter"></i></button>
+                        <button class="btn_red-social"><i class="fa-brands fa-linkedin-in"></i></button>
+                        <button class="btn_red-social"><i class="fa-brands fa-pinterest-p"></i></button>
+                        <button class="btn_red-social"><i class="fa-brands fa-google-plus-g"></i></button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</div>
+
+</body>
+
+
+</html>

@@ -44,9 +44,7 @@ h4 {
 	padding: 0 15px;
 	box-sizing: content-box;
     grid-template: 1fr 1fr minmax(975px, auto) / 1fr;
-    // grid-template: minmax(100px, auto) 1fr minmax(975px, auto) / 1fr;
 } 
-
 .red {
 	color: $_red;;
 }
