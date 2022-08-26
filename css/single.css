@@ -335,10 +335,18 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: auto 5px;
+  padding: 0 10px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.select-box__item {
+  width: 100%;
+}
+
+.select-box__select {
+  width: 100%;
 }
 
 .box__left {

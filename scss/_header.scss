@@ -39,6 +39,7 @@
 		}
 		summary::marker {
 			display: none;
+			color: #4e4e4e;
 		}
 
 
@@ -369,6 +370,11 @@
 		display: flex;
 		justify-content: end;
 	}
+
+	&__img img{
+		width: auto;
+	}
+
 	&__img p{
 		padding-top: 62px;
 		padding-bottom: 12px;
@@ -378,7 +384,7 @@
 		line-height: calc(28 / 22 * 100%);
 		text-transform: uppercase;
 		width: 50px;
-		margin-right: 25px;
+		right: 85px;
 		text-shadow: -8px 3px 20px black;
 	}
 }
