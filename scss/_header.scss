@@ -7,7 +7,7 @@
     grid-template-areas: ". top ."
                          ". nav .";
     align-items: center;
-
+		
     	&__top {
             display: grid;
             grid-template: 1fr / minmax(60px, auto) minmax(0fr, auto) 1fr minmax(70px,auto);
@@ -149,6 +149,7 @@
 
 		&__cart {
 			padding: 20px 0px;
+			position: relative;
 		}
 		&__cart:hover .cart-menu {
 			display: block;
@@ -160,6 +161,23 @@
 		}
         &__cart-menu:hover .cart-menu {
 			display: block;
+		}
+		&__cartProductCounter {
+			background-color: #f16d7f;
+			width: 20px;
+			height: 20px;
+			border-radius: 10px;
+			position: absolute;
+			right: 15px;
+			top: 10px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		&__cartProductCounter span{
+			@include lato-300(#fff);
+			font-size: 12px;
 		}
 		&__account {
             display: inline-block;
