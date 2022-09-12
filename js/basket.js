@@ -5,4 +5,6 @@ const galaryItemsEl = document.querySelector('.gallery__items');
 
 galaryItemsEl.addEventListener('click', (event) => {
     console.log(event.target.tagName);
+    event.preventDefault();
+    
 });

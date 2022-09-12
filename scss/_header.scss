@@ -1,4 +1,4 @@
-
+@import "_basket";
 
 .header {
     padding-top: 25px;
@@ -147,38 +147,6 @@
 			position: relative;
 		}
 
-		&__cart {
-			padding: 20px 0px;
-			position: relative;
-		}
-		&__cart:hover .cart-menu {
-			display: block;
-		}
-		&__cart-logo{
-			width: 32px;
-			height: 29px;
-			margin-right: 25px;
-		}
-        &__cart-menu:hover .cart-menu {
-			display: block;
-		}
-		&__cartProductCounter {
-			background-color: #f16d7f;
-			width: 20px;
-			height: 20px;
-			border-radius: 10px;
-			position: absolute;
-			right: 15px;
-			top: 10px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-		
-		&__cartProductCounter span{
-			@include lato-300(#fff);
-			font-size: 12px;
-		}
 		&__account {
             display: inline-block;
             position: relative;

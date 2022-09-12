@@ -1,3 +1,4 @@
+@import "_card";
 
 .main {
     display: grid;
@@ -269,71 +270,12 @@
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 		}
 
-		&__card:hover {
-            box-shadow: 4px 14px 13px -2px rgba(0, 0, 0, 0.45);
-		}
-		&__card:hover img{
-            filter: brightness(30%);
-		}
-        &__card:hover .card__btn{
-            display: block;
-            // pointer-events: auto;
+        &__card {
+            
         }
+		
 }
-.card {
-    position: relative;
 
-		&__link {
-            display: block;
-            position: relative;
-            overflow: hidden;
-            height: 281px;
-		}
-
-        &__image {
-            position: absolute;
-        }
-        
-		&__button {
-            width: 100%;
-            position: absolute;
-            top: 30%;
-            display: flex;
-            justify-content: center;
-            pointer-events: none;
-            color: #fff;
-		}
-        
-        &__btn {
-            display: none;
-            border: 1px solid #fff;
-            width: 123px;
-            height: 39px;
-            text-align: center;
-            line-height: 39px;
-            pointer-events: none;
-        }
-        &__btn:hover {
-            box-shadow: 0px 5px 8px 0px rgba(255, 255, 255, 0.9);
-        }
-
-		&__description {
-            margin-top: 20px;
-            @include lato-300(#222222);
-            line-height: 120%;
-            text-transform: uppercase;
-            padding-left: 15px;
-		}
-        
-		&__price {
-            @include lato-300(#222222);
-            font-size: 120%;
-            line-height: auto;
-            color: $_red;
-            padding-left: 15px;
-            margin-bottom: 20px;
-		}
-}
 .fa {
 }
 .fa-solid {
