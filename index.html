@@ -48,13 +48,13 @@
                     </form>
                 </div>
                 <div class="header__right">
-                    <div class="header__cart">
-                        <div class="header__cartProductCounter"><span>0</span></div>
-                        <img class="header__cart-logo" src="./img/index/cart.svg" alt="">
-                        <div class="header__cart-menu cart-menu menu">
+                    <div class="header__cart basket">
+                        <div class="basket__productCounter"><span>0</span></div>
+                        <img class="basket__image" src="./img/index/cart.svg" alt="">
+                        <div class="cart-menu menu">
                             <nav class="cart-menu__box">
                                 <div class="cart-menu__items">
-                                    <div class="cart-menu__item">
+                                    <!-- <div class="cart-menu__item">
                                         <a href="./single.html" class="cart-menu__link">
                                             <div class="cart-menu__left _ibg">
                                                 <img src="./img/index/cart_1.png" alt="Rebox zane">
@@ -95,11 +95,11 @@
                                             <div class="cart-menu__right">
                                                 <img src="./img/index/cross.png" alt="delete from cart">
                                             </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="cart-menu__sum">
                                     <div class="sum__text">TOTAL</div>
-                                    <div class="sum__val">$500.00</div>
+                                    <div class="sum__val">$0.00</div>
                                 </div>
                                 <div class="cart-menu__btns">
                                     <a href="./checkout.html" class="carted__btn-links"><div class="btns__item btn_red-cart">Checkout</div></a>
@@ -478,7 +478,7 @@
                 </div>
                 <section class="item__gallery gallery">
                     <div class="gallery__items">
-<a href="./product.html" class="gallery__card card__link card">
+<a href="./product.html" class="gallery__card card__link card" data-productId="1">
     <div class="card__box _ibg">
         <img class="card__image" src="./img/index/card_01.png" alt="card image">
         <div class="card__button">
@@ -486,10 +486,10 @@
                     Add to Cart
         </div>
     </div>
-    <div class="card__description">mango people t-shirt</div>
+    <div class="card__name">mango people t-shirt</div>
     <div class="card__price">$52.00</div>
 </a>
-<a href="./product.html" class="gallery__card card__link card">
+<a href="./product.html" class="gallery__card card__link card" data-productId="2">
     <div class="card__box _ibg">
         <img class="card__image" src="./img/index/card_02.png" alt="card image">
         <div class="card__button">
@@ -497,10 +497,10 @@
                     Add to Cart
         </div>
     </div>
-    <div class="card__description">mango people t-shirt</div>
+    <div class="card__name">mango people t-shirt</div>
     <div class="card__price">$52.00</div>
 </a>
-<a href="./product.html" class="gallery__card card__link card">
+<a href="./product.html" class="gallery__card card__link card" data-productId="3">
     <div class="card__box _ibg">
         <img class="card__image" src="./img/index/card_03.png" alt="card image">
         <div class="card__button">
@@ -508,10 +508,10 @@
                     Add to Cart
         </div>
     </div>
-    <div class="card__description">mango people t-shirt</div>
+    <div class="card__name">mango people t-shirt</div>
     <div class="card__price">$52.00</div>
 </a>
-<a href="./product.html" class="gallery__card card__link card">
+<a href="./product.html" class="gallery__card card__link card" data-productId="4">
     <div class="card__box _ibg">
         <img class="card__image" src="./img/index/card_04.png" alt="card image">
         <div class="card__button">
@@ -519,10 +519,10 @@
                     Add to Cart
         </div>
     </div>
-    <div class="card__description">mango people t-shirt</div>
+    <div class="card__name">mango people t-shirt</div>
     <div class="card__price">$52.00</div>
 </a>
-<a href="./product.html" class="gallery__card card__link card">
+<a href="./product.html" class="gallery__card card__link card" data-productId="5">
     <div class="card__box _ibg">
         <img class="card__image" src="./img/index/card_05.png" alt="card image">
         <div class="card__button">
@@ -530,10 +530,10 @@
                     Add to Cart
         </div>
     </div>
-    <div class="card__description">mango people t-shirt</div>
+    <div class="card__name">mango people t-shirt</div>
     <div class="card__price">$52.00</div>
 </a>
-<a href="./product.html" class="gallery__card card__link card">
+<a href="./product.html" class="gallery__card card__link card" data-productId="6">
     <div class="card__box _ibg">
         <img class="card__image" src="./img/index/card_06.png" alt="card image">
         <div class="card__button">
@@ -541,10 +541,10 @@
                     Add to Cart
         </div>
     </div>
-    <div class="card__description">mango people t-shirt</div>
+    <div class="card__name">mango people t-shirt</div>
     <div class="card__price">$52.00</div>
 </a>
-<a href="./product.html" class="gallery__card card__link card">
+<a href="./product.html" class="gallery__card card__link card" data-productId="7">
     <div class="card__box _ibg">
         <img class="card__image" src="./img/index/card_07.png" alt="card image">
         <div class="card__button">
@@ -552,10 +552,10 @@
                     Add to Cart
         </div>
     </div>
-    <div class="card__description">mango people t-shirt</div>
+    <div class="card__name">mango people t-shirt</div>
     <div class="card__price">$52.00</div>
 </a>
-<a href="./product.html" class="gallery__card card__link card">
+<a href="./product.html" class="gallery__card card__link card" data-productId="8">
     <div class="card__box _ibg">
         <img class="card__image" src="./img/index/card_08.png" alt="card image">
         <div class="card__button">
@@ -563,7 +563,7 @@
                     Add to Cart
         </div>
     </div>
-    <div class="card__description">mango people t-shirt</div>
+    <div class="card__name">mango people t-shirt</div>
     <div class="card__price">$52.00</div>
 </a>
 
