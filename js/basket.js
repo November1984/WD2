@@ -1,15 +1,29 @@
 "use strict";
 
-const basketProducts = {}; // Элементы, добавленные в корзину
-
-// const cartEl = document.querySelector('.header__cart');
+// Элементы, добавленные в корзину
+const basketProducts = {}; 
 // контейнер с карточками товаров
 const galaryItemsEl = document.querySelector('.gallery__items'); 
-
+// блок для размещения списка элементов
 const basketEl = document.querySelector('.cart-menu__items');
+// Счётчик продукции в корзине
+const basketCounter = document.querySelector('.basket__productCounter span');
+// Счётчик стоимости продукции в корзине
+const basketPriceCounter = document.querySelector('.sum__val');
 
+/**
+ * 
+ * @returns количество товаров в корзине
+ */
 function getTotalProductCount (){
-    // Object.values(basketProducts).reduce((acc, product) => {});
+    return Object.values(basketProducts).reduce((acc, product) => acc + product.count, 0);
+}
+/**
+ * 
+ * @returns стоимость товаров в корзине
+ */
+function getTotalProductPrice (){
+    return Object.values(basketProducts).reduce((acc, product) => acc + product.count * product.price, 0);
 }
 
 /**
@@ -27,6 +41,12 @@ function addProduct (id, price, name, img) {
     basketProducts[id].count++;
     renderProductInBasket(id);
 }
+
+/**
+ * Отображает продукт в меню корзины или увеличивает количество добавленных
+ * @param {NUMBER} id - индекс продукта
+ * @returns 
+ */
 function renderProductInBasket(id) {
     const basketItem = basketEl.querySelector(`.cart-menu__item[data-productId = "${id}"]`);
     if (!basketItem) {
@@ -34,9 +54,13 @@ function renderProductInBasket(id) {
         return;
     }
     basketItem.querySelector('.cart-menu__price span').textContent = basketProducts[id].count.toString();
-    // console.log(basketItem.querySelector('.cart-menu__price span').textContent);
 }
 
+/**
+ * Формирует разметку для меню корзины
+ * @param {NUMBER} id индекс продукта
+ * @returns Возвращает HTML-разметку для добавления продукта в меню корзины
+ */
 function addNewProductInBasket (id) {
     return `
         <div class="cart-menu__item" data-productId="${id}">
@@ -76,8 +100,10 @@ galaryItemsEl.addEventListener('click', (event) => {
     const productCardImg = productCard.querySelector('.card__image');
     console.log();
     addProduct(productId, 
-              +productCardPrice.textContent.slice(1),
-              productCardName.textContent,
-              productCardImg.src);
-    
+        +productCardPrice.textContent.slice(1),
+        productCardName.textContent,
+        productCardImg.src);
+    basketCounter.textContent = getTotalProductCount();
+    basketPriceCounter.textContent = "$" + getTotalProductPrice();
+    basketPriceCounter.closest('.cart-menu__sum').classList.remove('hidden');
 });

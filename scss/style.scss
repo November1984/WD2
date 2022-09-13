@@ -39,7 +39,7 @@ h4 {
 }
 
 .hidden {
-	display: none;
+	display: none !important;
 }
 .wrapper {
     height: 100vh;

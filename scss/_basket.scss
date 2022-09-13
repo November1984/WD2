@@ -47,8 +47,11 @@
 	top: 65px;
 	right: $_cart-menu-width / 8;
 	width: $_cart-menu-width;
+    padding: 15px 0px 15px 0px;
 		&__box {
 			padding: 15px;
+            max-height: 300px;
+            overflow: scroll;
 		}
 
 		&__items {

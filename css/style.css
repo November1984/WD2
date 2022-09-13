@@ -54,7 +54,7 @@ h4 {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .wrapper {
@@ -254,10 +254,13 @@ h4 {
   top: 65px;
   right: 32.875px;
   width: 263px;
+  padding: 15px 0px 15px 0px;
 }
 
 .cart-menu__box {
   padding: 15px;
+  max-height: 300px;
+  overflow: scroll;
 }
 
 .cart-menu__items {
